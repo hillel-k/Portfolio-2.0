@@ -33,17 +33,20 @@
     <link rel="canonical" href="{{ site.url | url }}{{ page.url }}">
     <link rel="shortcut icon" type="image/png" href="{{ '/assets/img/favicon.png' | url }}">
     <link rel="apple-touch-icon" href="{{ '/assets/img/apple-touch-icon.png' | url }}">
-    <link rel="dns-prefetch" href="https://fonts.googleapis.com">
+    <link rel="stylesheet" href="https://use.typekit.net/ubf1dfo.css">
+    
+<!--    <link rel="dns-prefetch" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="dns-prefetch" href="https://fonts.gstatic.com">
     <link rel="preconnect" href="https://fonts.gstatic.com">
-    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600&display=swap">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600&display=swap"> !-->
+
     <link rel="stylesheet" href="{{ '/assets/css/main.css' | url }}">
 </head>	
 
 <body class="flex flex-col h-screen bg-white text-gray-800 break-words">
     {% include "partials/header.njk" %}
-    <main class="mx-7 lg:mx-6 mt-32 flex-grow">
+    <main class="mx-7 lg:mx-6 mt-2 flex-grow">
         {% if layout === "post" %}
         {{ content | safe }}
         {% else %}
@@ -53,7 +56,12 @@
         {% endif %}
     </main>
     {% include "partials/footer.njk" %}
+
+      <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.10.4/gsap.min.js" 
+    integrity="sha512-VEBjfxWUOyzl0bAwh4gdLEaQyDYPvLrZql3pw1ifgb6fhEvZl9iDDehwHZ+dsMzA0Jfww8Xt7COSZuJ/slxc4Q==" 
+    crossorigin="anonymous" referrerpolicy="no-referrer"></script>
     <script src="{{ '/assets/js/bundle.js' | url }}"></script>
+
 </body>
 
 </html>

@@ -1,11 +1,15 @@
 [
     {
-        "label": "About",
-        "url": "/about"
+        "label": "A Propos",
+        "url": "/a-propos"
     },
     {
-        "label": "Tag List",
-        "url": "/tags"
+        "label": "Projets",
+        "url": "/projets"
+    },
+    {
+        "label": "Blog",
+        "url": "/blog"
     },
     {
         "label": "GitHub",

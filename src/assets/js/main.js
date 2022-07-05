@@ -2,6 +2,7 @@
 Hide header on scroll down & show on scroll up
 */
 
+
 const header = document.getElementById('header');
 let lastPos = document.documentElement.scrollTop;
 
@@ -49,3 +50,12 @@ document.addEventListener('DOMContentLoaded', () => {
     elem.removeAttribute('data-src');
   });
 }, false);
+
+
+//Animation 
+
+const tl = gsap.timeline({delay:0.6})
+.from("#introImg", {scale:1.8, duration:.6})
+.to("#maskIntro", {clipPath:"polygon(0% 0%, 100% 0%, 100% 100%, 0% 100%)"}, 0)
+.to("#maskIntro", {scale:1, duration:0.4}, -.5)
+.to("#maskIntro", {scale:1, duration:0.2})

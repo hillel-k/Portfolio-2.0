@@ -9,11 +9,13 @@ module.exports = (config) => {
 
   config.addPassthroughCopy('src/assets/img/**/*');
   config.addPassthroughCopy({ 'src/posts/img/**/*': 'assets/img/' });
+  config.addPassthroughCopy({ 'src/projets/img/**/*': 'assets/img/' });
 
   config.addWatchTarget("src/assets/js/");
 
   config.addLayoutAlias('default', 'layouts/default.njk');
   config.addLayoutAlias('post', 'layouts/post.njk');
+  config.addLayoutAlias('projet', 'layouts/projet.njk');
 
   config.addFilter('readableDate', require('./lib/filters/readableDate'));
   config.addFilter('minifyJs', require('./lib/filters/minifyJs'));
@@ -24,6 +26,13 @@ module.exports = (config) => {
   config.addCollection('tagList', require('./lib/collections/tagList'));
   config.addCollection('pagedPosts', require('./lib/collections/pagedPosts'));
   config.addCollection('pagedPostsByTag', require('./lib/collections/pagedPostsByTag'));
+  
+  //Collection projets
+  config.addCollection('projets', require('./lib/collections/projets'));
+  config.addCollection('tagProjets', require('./lib/collections/tagProjet'));
+  config.addCollection('pagedProjets', require('./lib/collections/pagedProjets'));
+  config.addCollection('pagedProjetsByTag', require('./lib/collections/pagedProjetsByTag'));
+
 
   return {
     dir: {
