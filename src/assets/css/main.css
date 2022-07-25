@@ -44,3 +44,37 @@ p{
     overflow:hidden;
     clip-path: polygon(0 100%, 100% 100%, 100% 100%, 0% 100%);
 }
+.main-gallery{
+    height: 600px;
+    width: 300px;
+
+}
+.gallery-cell {
+    width: 100%;
+    height: 100%;
+    background-color: #3B683E;
+    counter-increment: gallery-cell;
+}
+.gallery-cell.is-selected {
+    
+  }
+
+.flickity-button:disabled {
+  display: none;
+}
+
+.flickity-page-dots {
+    bottom: -22px;
+  }
+  /* dots are lines */
+  .flickity-page-dots .dot {
+    height: 4px;
+    width: 40px;
+    margin: 0;
+    border-radius: 0;
+  }
+
+#heroVideo {
+    z-index: 5;
+    
+}
