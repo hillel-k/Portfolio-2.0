@@ -35,6 +35,7 @@
     <link rel="apple-touch-icon" href="{{ '/assets/img/apple-touch-icon.png' | url }}">
     <link rel="stylesheet" href="https://use.typekit.net/ubf1dfo.css">
     <link rel="stylesheet" href="https://unpkg.com/flickity@2/dist/flickity.min.css">
+    
 
     
 <!--    <link rel="dns-prefetch" href="https://fonts.googleapis.com">
@@ -48,11 +49,11 @@
 
 <body class="flex flex-col h-screen bg-white text-gray-800 break-words">
     {% include "partials/header.njk" %}
-    <main class="mx-7 lg:mx-6 mt-2 flex-grow">
+    <main class="mt-2 flex-grow">
         {% if layout === "post" %}
         {{ content | safe }}
         {% else %}
-        <div class="max-w-5xl mx-auto">
+        <div class="mx-auto">
             {{ content | safe }}
         </div>
         {% endif %}
@@ -62,6 +63,8 @@
       <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.10.4/gsap.min.js" 
     integrity="sha512-VEBjfxWUOyzl0bAwh4gdLEaQyDYPvLrZql3pw1ifgb6fhEvZl9iDDehwHZ+dsMzA0Jfww8Xt7COSZuJ/slxc4Q==" 
     crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+    <script src="https://unpkg.com/@lottiefiles/lottie-player@latest/dist/lottie-player.js"></script>
+
     <script src="{{ '/assets/js/bundle.js' | url }}"></script>
 
 </body>

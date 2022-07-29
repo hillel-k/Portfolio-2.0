@@ -1,39 +1,110 @@
 ---
 layout: default
-permalink: "{% if paged.number > 1 %}page/{{ paged.number }}/{% endif %}index.html"
+title: Portfolio 2022
+
 ---
-<div class="flex flex-col items-center sm:flex-row justify-between gap-12">
-    <div id="heroVideo">
-        <video autoplay loop muted playsinline type="video/webm">  
-            <source src="/src/assets/img/statue.webm" 
-            type="video/webm"></video>
+
+<section id="intro">
+
+
+
+</section>
+
+<section id="hero">
+    <div class="flex h-screen justify-center align-middle">
+
+            <div id="lottieHero">
+                <lottie-player src="/assets/img/traceHero.json" background="transparent"  speed=".8"  
+                style="width: auto; height: 90vh;" loop autoplay></lottie-player>
+            </div>
+
+            <div class="w-full h-5/6 flex items-center justify-center flex-col ">
+                    <p class="border border-portfolio-vert text-portfolio-vert rounded-full py-1 px-2 text-xs">2022</p>
+                    <h1 class="text-portfolio-vert pt-6 ml-40 textIntro RL">Création</h1>
+                    <h1 class="text-portfolio-vert mr-72 textIntro LR">Visuelle</h1>
+                    <h1 class="text-portfolio-vert textIntro RL2">Digitale</h1>
+
+                <div id="heroVideo">
+                    <video autoplay loop muted playsinline preload="auto" id="teteVideo">  
+                    <source src="/assets/img/statue.webm" type="video/webm">
+                    </video>
+                </div>
+            </div>
+
+    </div>
+</section>
+
+<section id="facts">
+    <div>
+        <div class="parent inline-block">
+            <div class="div1">
+            <img src="assets/img/iconSearch.svg" class="w-14" alt="">
+            <h3 class="my-4">Posséder une présence en ligne n’est plus une option</h3>
+            <p>78% des internautes recherchent un lieu avant de s’y rendre, 
+                et 81 % des internautes effectuent des achats en ligne. 
+                Aujourd’hui, votre présence en ligne est requise.</p>
+            </div>
+            <div class="div2"> 
+            <img src="assets/img/iconSearch.svg" class="w-14" alt="">
+            <h3 class="my-4">Faite évoluer votre image de marque</h3>
+            <p>Améliorer votre notoriété en ligne, en faisant évoluer votre 
+                marque grâce aux leviers de la création graphique. 
+                Créer une connexion plus forte entre votre entreprise et vos clients.</p>
+            </div>
+            <div class="div3"> 
+            <img src="assets/img/iconSearch.svg" class="w-14" alt="">
+            <h3 class="my-4">Un processus sur-mesure</h3>
+            <p>Après avoir défini ensemble des objectifs pour votre projet, 
+                je vous proposerai des concepts forts et impactant pour se démarquer de manière 
+                créative de la concurrence. Nous pourrons échanger et faire évoluer votre projet, 
+                afin de concevoir une solution véritablement sur-mesure.</p>
+            </div>
+            <div class="div4"> 
+            <img src="assets/img/iconSearch.svg" class="w-14" alt="">
+            <h3 class="my-4">Un style unique</h3>
+            <p>78% des internautes recherchent un lieu avant de s’y rendre, 
+            et 81 % des internautes effectuent des achats en ligne. 
+            Aujourd’hui, votre présence en ligne est requise.</p>
+            </div>
+        </div>
+
+        <div id="videoAmpoule inline-block">
+            <img src="assets/img/Ampoule.png" alt="" class="w-44">
+
+        </div>
     </div>
 
-    <div class="w-1/3 flex absolute items-center justify-center flex-col">
-        <p class="border border-portfolio-vert text-portfolio-vert rounded-full py-1 px-2 text-xs">2022</p>
-        <h1 class="text-portfolio-vert ml-10">Création</h1>
-        <h1 class="text-portfolio-vert mr-36">Visuelle</h1>
-        <h1 class="text-portfolio-vert">Digitale</h1>
-    </div>
+</section>
 
- 
+<div class="marquee">
+    <div class="marqueeone">
+        Graphisme - 3D - Identité Visuelle - Motion Design - Logo - Catalogue - Web Design
+
+               </div>
+    <div class="marqueetwo">
+        Graphisme - 3D - Identité Visuelle - Motion Design - Logo - Catalogue - Web Design
+                
+                </div>
+         <div class="marqueethree">
+        Créations graphiques depuis Marseille
+                </div>
+         <div class="marqueefour">
+         Graphisme - 3D - Identité Visuelle - Motion Design - Logo - Catalogue - Web Design
+      </div>
 </div>
 
 
-<section class="container flex">
-    <div class="w-1/4 inline-block">
-    <p> Titre</p>
-    </div>
-    
+<section id="selectionProjets">
+
+
+<div class="flex bg-portfolio-vert">
     <div class="bg-gray-100 w-3/4 inline-block p-10">
         <div>
             <h3>Test</h3>
-            <p>lorem ipsum</p>
+            <p>lorem ipsummmm</p>
         </div>
     </div>
-<section>
 
-<section> 
     <div class="main-gallery" data-flickity='{ "cellAlign": "left", "contain": true, "wrapAround": true }'>
         <div class="gallery-cell">
             <img src="/src/assets/img/favicon.png" alt="">
@@ -48,7 +119,22 @@ permalink: "{% if paged.number > 1 %}page/{{ paged.number }}/{% endif %}index.ht
             3
         </div>
     </div>
-</section>
+</div>    
+
+<section>
+
+
+
+
+
+
+
+
+
+
+
+
+
 
 <script src="https://unpkg.com/flickity@2/dist/flickity.pkgd.min.js"></script>
 <script src="https://cdnjs.cloudflare.com/ajax/libs/matter-js/0.18.0/matter.min.js" integrity="sha512-5T245ZTH0m0RfONiFm2NF0zcYcmAuNzcGyPSQ18j8Bs5Pbfhp5HP1hosrR8XRt5M3kSRqzjNMYpm2+it/AUX/g==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>

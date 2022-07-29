@@ -2,6 +2,7 @@
 Hide header on scroll down & show on scroll up
 */
 
+
 const header = document.getElementById('header');
 let lastPos = document.documentElement.scrollTop;
 
@@ -59,3 +60,13 @@ const tl = gsap.timeline({delay:0.6})
 .to("#maskIntro", {scale:1, duration:0.4}, -.5)
 .to("#maskIntro", {scale:1, duration:0.2})
 ;
+
+let videoElem1 = document.querySelector('#teteVideo');
+videoElem1.play();
+
+gsap.from(".RL", { x: 200, duration: 2});
+gsap.from(".LR", { x: -200, duration: 2});
+gsap.from(".RL2", { x: 300, duration: 2});
+
+//GSAP Marquee
+

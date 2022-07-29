@@ -1,4 +1,6 @@
 const pluginTailwind = require('eleventy-plugin-tailwindcss');
+const Image = require("@11ty/eleventy-img")
+
 
 module.exports = (config) => {
   config.addPlugin(pluginTailwind, {
@@ -7,7 +9,8 @@ module.exports = (config) => {
 
   config.setDataDeepMerge(true);
 
-  config.addPassthroughCopy('src/assets/img/**/*');
+ 
+  config.addPassthroughCopy('src/assets/img/*');
   config.addPassthroughCopy({ 'src/posts/img/**/*': 'assets/img/' });
   config.addPassthroughCopy({ 'src/projets/img/**/*': 'assets/img/' });
 
@@ -34,6 +37,9 @@ module.exports = (config) => {
   config.addCollection('pagedProjetsByTag', require('./lib/collections/pagedProjetsByTag'));
 
 
+
+
+  
   return {
     dir: {
       input: 'src',

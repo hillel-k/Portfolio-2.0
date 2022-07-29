@@ -19,10 +19,11 @@
     }
 }
 body{
- 
+    overflow-x: hidden;
 }
-h1,h2,h3{
+h1,h2,h3,h4{
     font-family: rufina-stencil, sans-serif;
+    line-height: 100%;
 }
 
 h1{
@@ -32,11 +33,22 @@ h2{
     font-size: 1.8rem;
 }
 h3{
+    font-size: 1.4rem;
+    font-weight: bold;
+    line-height: 1.4rem;
+}
+h4{
     font-size: 1.2rem;
+    font-weight: 800;
 }
 p{
     font-size: 1rem;
     line-height: 1.2rem;
+}
+
+.textIntro {
+    font-size: 10rem;
+    line-height: 100%;
 }
 
 #maskIntro {
@@ -76,5 +88,127 @@ p{
 
 #heroVideo {
     z-index: 5;
+    position: absolute;
+    overflow: hidden;
     
 }
+
+#lottieHero {
+    position: absolute;
+}
+
+#teteVideo {
+    display: block;
+    margin: 0 auto;
+    height: 28rem;
+}
+
+.parent {
+    display: grid;
+    width: 50%;
+    margin-left: 6rem;
+    background-color: #F7F8F7;
+    border-radius: 10px;
+    border: #3B683E 2px solid;
+    grid-template-columns: repeat(2, 1fr);
+    grid-template-rows: repeat(2, 1fr);
+    grid-column-gap: 5px;
+    grid-row-gap: 5px;
+    }
+    
+    .div1 { grid-area: 1 / 1 / 2 / 2; }
+    .div2 { grid-area: 1 / 2 / 2 / 3; }
+    .div3 { grid-area: 2 / 1 / 3 / 2; }
+    .div4 { grid-area: 2 / 2 / 3 / 3; }
+
+.div1 {
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    text-align: center;
+    padding: 2.3rem 1.5rem;
+}
+.div2 {
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    text-align: center;
+    padding: 2.3rem 1.5rem;
+}
+.div3 {
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    text-align: center;
+    padding: 2.3rem 1.5rem;
+}
+.div4 {
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    text-align: center;
+    padding: 2.3rem 1.5rem;
+}
+
+#facts{
+  margin: 3rem 0 5rem 0;
+
+}
+
+.videoAmpoule{
+
+}
+
+.marquee {
+    height: 45px;
+    width: 100vw;
+    overflow: hidden;
+    position: relative;
+    background-color: #E2EAE1;  
+    border-top: 1px solid #3B683E;
+    border-bottom: 1px solid #3B683E;
+    padding: 8px 0 8px 0;
+    color: #3B683E;
+    text-transform: uppercase;
+    
+  }
+  
+  
+  /* would need to be adjusted depending on time */
+  .marquee .marqueeone{
+    animation: marquee 30s linear infinite
+  }
+  
+  .marquee .marqueetwo{
+    animation: marquee 30s linear 7.5s infinite 
+  }
+  
+  .marquee .marqueethree{
+    animation: marquee 30s linear 15s infinite
+  }
+  
+  .marquee .marqueefour{
+    animation: marquee 30s linear 22.5s infinite
+  }
+  
+  /* even out the elements */
+  .marquee div {
+    position: absolute;
+    width: 100%;
+    left: 100%;
+    height: 40px;
+    display: flex;
+    justify-content: space-between;
+  }
+  
+  .marquee:hover div {
+    animation-play-state: paused;
+  }
+  
+  /* add delay at the end of animation so you dont start while another div is going */
+  @keyframes marquee {
+    0% { left: 100%; }
+    50% { left: -100%; }
+    100% {left: -100%}
+  }
+  
