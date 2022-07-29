@@ -68,5 +68,18 @@ gsap.from(".RL", { x: 200, duration: 2});
 gsap.from(".LR", { x: -200, duration: 2});
 gsap.from(".RL2", { x: 300, duration: 2});
 
-//GSAP Marquee
+//Caroussel 
+var flkty = new Flickity( '.gallery-cell', {
+  imagesLoaded: true,
+  percentPosition: false
+});
+
+var caption = document.querySelector('.caption');
+var link = document.querySelector('.lienProjet');
+
+flkty.on( 'select', function() {
+  // set image caption using img's alt
+  caption.textContent = flkty.selectedElement.alt;
+});
+
 
