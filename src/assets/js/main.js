@@ -83,3 +83,9 @@ flkty.on( 'select', function() {
 });
 
 
+//Scroll
+/*const scroller = new LocomotiveScroll({
+  el: document.querySelector('[data-scroll-container]'),
+  smooth: true
+});*/
+

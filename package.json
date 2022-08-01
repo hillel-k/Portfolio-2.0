@@ -31,5 +31,7 @@
 		"rimraf": "^3.0.2",
 		"terser": "^4.8.1"
 	},
-	"dependencies": {}
+	"dependencies": {
+		"locomotive-scroll": "^4.1.4"
+	}
 }

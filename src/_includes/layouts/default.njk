@@ -35,8 +35,8 @@
     <link rel="apple-touch-icon" href="{{ '/assets/img/apple-touch-icon.png' | url }}">
     <link rel="stylesheet" href="https://use.typekit.net/ubf1dfo.css">
     <link rel="stylesheet" href="https://unpkg.com/flickity@2/dist/flickity.min.css">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/locomotive-scroll@3.5.4/dist/locomotive-scroll.css"> 
     
-
     
 <!--    <link rel="dns-prefetch" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.googleapis.com">
@@ -50,13 +50,15 @@
 <body class="flex flex-col h-screen bg-white text-gray-800 break-words">
     {% include "partials/header.njk" %}
     <main class="mt-2 flex-grow">
-        {% if layout === "post" %}
-        {{ content | safe }}
-        {% else %}
-        <div class="mx-auto">
+        <div data-scroll-container>
+            {% if layout === "post" %}
             {{ content | safe }}
+            {% else %}
+            <div class="mx-auto">
+                {{ content | safe }}
+            </div>
+            {% endif %}
         </div>
-        {% endif %}
     </main>
     {% include "partials/footer.njk" %}
 
@@ -64,8 +66,10 @@
     integrity="sha512-VEBjfxWUOyzl0bAwh4gdLEaQyDYPvLrZql3pw1ifgb6fhEvZl9iDDehwHZ+dsMzA0Jfww8Xt7COSZuJ/slxc4Q==" 
     crossorigin="anonymous" referrerpolicy="no-referrer"></script>
     <script src="https://unpkg.com/@lottiefiles/lottie-player@latest/dist/lottie-player.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/locomotive-scroll@3.5.4/dist/locomotive-scroll.min.js"></script>
 
     <script src="{{ '/assets/js/bundle.js' | url }}"></script>
+
 
 </body>
 
