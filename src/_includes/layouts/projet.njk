@@ -4,9 +4,9 @@ layout: default
 
 <article class="max-w-5xl mx-auto">
     <header class="mb-14">
-        <h1> Projets </h1>
+
         <h1 class="text-3xl text-center font-bold leading-normal text-gray-900 mt-0 mb-3">{{ title }}</h1>
-        <div class="text-center">Published on {{ page.date | readableDate }}</div>
+        <div class="text-center">Réalisé en {{ page.annee | readableDate }}</div>
         {% if tags %}
         <div class="mt-3 text-center">
             {% for tag in tags %}
@@ -16,14 +16,22 @@ layout: default
         {% endif %}
         {% if thumb %}
         <div class="mt-10 -mx-7 md:mx-0">
-            <img class="w-full max-w-2xl mx-auto" src="{{ thumb | url }}" width="960" height="500" alt="This project thumbnail">
+            <img class="w-full max-w-2xl mx-auto overflow-hidden" src="{{ thumb | url }}" alt="This project thumbnail">
         </div>
         {% endif %}
     </header>
-    <div id="content" class="prose text-gray-800 max-w-none">
-        {{ content | safe }}
-    </div>
+
+    <section class="m-0-auto">
+        <div id="content" class="prose m-4 sm:max-w-6xl sm:m-12 text-gray-800 ">
+            {{ content | safe }}
+        </div>
+    </section>
+
+
+
+
     {% if site.disqusShortname %}
+
     <div class="mt-10">
         {% if process.environment === "production" %}
         {% include "partials/disqus.njk" %}

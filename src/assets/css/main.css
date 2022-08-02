@@ -101,6 +101,17 @@ p{
   width: 100vw;
 }
 
+.prose img {
+  margin-bottom: .9rem;
+}
+
+.prose p {
+  max-width: 700px;
+  margin: 1rem auto 1.5rem auto ;
+  line-height: 1.5rem;
+  font-size: 1.1rem;
+}
+
 #hero {
   overflow: hidden;
 }
@@ -147,14 +158,17 @@ p{
   padding: 2.3rem 1.5rem;
 }
 
-
+figcaption {
+  text-align: center;
+  font-weight: 200;
+}
 
 #facts{
   display: flex;
   align-items: center;
   justify-content: space-around;
   width: 90%;
-  max-width: 1200px;
+  max-width: 72rem;
   margin: 0 auto 9rem auto;
 
 }
