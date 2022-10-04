@@ -61,8 +61,8 @@ const tl = gsap.timeline({delay:0.6})
 .to("#maskIntro", {scale:1, duration:0.2})
 ;
 
-let videoElem1 = document.querySelector('#teteVideo');
-videoElem1.play();
+/*let videoElem1 = document.querySelector('#teteVideo');
+videoElem1.play();*/
 
 gsap.from(".RL", { x: 200, duration: 2});
 gsap.from(".LR", { x: -200, duration: 2});
@@ -79,15 +79,19 @@ var flkty = new Flickity( '.gallery-cell', {
 
 var caption = document.querySelector('#caption');
 
-/*flkty.on( 'select', function() {
+flkty.on( 'select', function() {
   // set image caption using img's alt
   caption.textContent = flkty.selectedElement.alt;
-});*/
+});
 
 
 //Scroll
-/*const scroller = new LocomotiveScroll({
+const scroller = new LocomotiveScroll({
   el: document.querySelector('[data-scroll-container]'),
   smooth: true
-});*/
 
+});
+console.log('0')
+
+// Page Transition
+const swup = new Swup();

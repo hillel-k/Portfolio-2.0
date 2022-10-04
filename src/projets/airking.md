@@ -2,12 +2,11 @@
 title: Airking
 description: Rajeunir une gamme de bouteille de vin
 author: "Hillel K."
-date: 2022-08-31T09:31:48.244Z
+date: 2022-05-10
 thumb: coverAirking.jpg
-annee: 2022
-tags:
-  - Packaging
-  - 3D
+tagProjet:
+  - 3D 
+  - Site Internet
 ---
 
 ## Démarche créative

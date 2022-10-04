@@ -2,6 +2,8 @@ const pluginTailwind = require('eleventy-plugin-tailwindcss');
 const Image = require("@11ty/eleventy-img")
 
 
+
+
 module.exports = (config) => {
   config.addPlugin(pluginTailwind, {
     src: 'src/assets/css/*'
@@ -34,13 +36,9 @@ module.exports = (config) => {
   
   //Collection projets
   config.addCollection('projets', require('./lib/collections/projets'));
-  config.addCollection('tagProjets', require('./lib/collections/tagProjet'));
+  config.addCollection('tagProjet', require('./lib/collections/tagProjet'));
   config.addCollection('pagedProjets', require('./lib/collections/pagedProjets'));
   config.addCollection('pagedProjetsByTag', require('./lib/collections/pagedProjetsByTag'));
-
-
-
-
   
   return {
     dir: {
@@ -53,3 +51,7 @@ module.exports = (config) => {
     markdownTemplateEngine: 'njk'
   };
 };
+
+
+
+

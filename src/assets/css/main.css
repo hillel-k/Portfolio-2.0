@@ -35,15 +35,15 @@ header {
 }
 
 h1{
-    font-size: 2.2rem;
+    font-size: 2.5rem;
 }
 h2{
-    font-size: 1.8rem;
+    font-size: 2rem;
 }
 h3{
     font-size: 1.4rem;
     font-weight: bold;
-    line-height: 1.4rem;
+    line-height: 2rem;
 }
 h4{
     font-size: 1.2rem;
@@ -51,7 +51,16 @@ h4{
 }
 p{
     font-size: 1rem;
-    line-height: 1.2rem;
+    line-height: 1.5rem;
+}
+
+.transition-fade {
+  transition: 0.4s;
+  opacity: 1;
+}
+
+html.is-animating .transition-fade {
+  opacity: 0;
 }
 
 .m-0-auto {
