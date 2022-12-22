@@ -2,7 +2,7 @@
 title: Evershape
 description: Conception d'identité, visuels et site pour une marque de thé
 author: "Hillel K."
-date: 2021-08-31T09:31:48.244Z
+date: 2019-08-31T09:31:48.244Z
 thumb: coverEvershape.jpg 
 annee: 2018
 tags:
