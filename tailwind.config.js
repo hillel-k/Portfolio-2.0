@@ -22,6 +22,7 @@ module.exports = {
       white: colors.white,
       portfolio: {
         vert: '#3b683e',
+        vertLg: '#E2EAE1',
       },
       gray: {
         100: '#f7fafc',

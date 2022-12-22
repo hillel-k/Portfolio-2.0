@@ -10,6 +10,7 @@
 {%- endset -%}
 {%- set metaKeywords -%}
     {%- if tags -%}{%- for tag in tags -%}{{ tag }},{%- endfor -%}{%- endif -%}
+    {%- if tagProjets -%}{%- for tagProjet in tagProjets -%}{{ tagProjet }},{%- endfor -%}{%- endif -%}
     {%- if site.keywords -%}
         {%- for keyword in site.keywords -%}
             {{ keyword }}{%- if not loop.last %},{% endif -%}
@@ -35,7 +36,6 @@
     <link rel="apple-touch-icon" href="{{ '/assets/img/apple-touch-icon.png' | url }}">
     <link rel="stylesheet" href="https://use.typekit.net/ubf1dfo.css">
     <link rel="stylesheet" href="https://unpkg.com/flickity@2/dist/flickity.min.css">
-    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/locomotive-scroll@3.5.4/dist/locomotive-scroll.css"> 
     
     
 <!--    <link rel="dns-prefetch" href="https://fonts.googleapis.com">
@@ -64,7 +64,6 @@
 
     <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.10.4/gsap.min.js"></script>
     <script src="https://unpkg.com/@lottiefiles/lottie-player@latest/dist/lottie-player.js"></script>
-    <script src="https://cdn.jsdelivr.net/npm/locomotive-scroll@3.5.4/dist/locomotive-scroll.min.js"></script>
     <script src="https://unpkg.com/swup@latest/dist/swup.min.js"></script>  
 
     <script src="{{ '/assets/js/bundle.js' | url }}"></script>

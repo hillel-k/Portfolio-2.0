@@ -64,7 +64,7 @@ html.is-animating .transition-fade {
 }
 
 .m-0-auto {
-  margin: 0 auto;
+  margin: 0 auto 0 auto;
 }
 
 .textIntro {
@@ -300,6 +300,14 @@ figcaption {
   border-radius: 10px;
 }
 
+.contactWrap {
+  margin: 4rem auto ;
+}
+
+.contactWrap p {
+  margin-bottom: 0;
+}
+
 @media (max-width: 768px) {
   .grilleService {
     max-width: 95%;
@@ -321,4 +329,17 @@ figcaption {
     } 
 
  
+}
+
+#CTAProjet {
+  background-image: url("assets/");
+  background-color: #3B683E;
+  max-width: 1200px;
+  height: 400px;
+  padding: 4rem;
+  text-align: center;
+  display: flex;
+  align-items: center;
+  justify-items: center;
+  flex-direction: column;
 }
