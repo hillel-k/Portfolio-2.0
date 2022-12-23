@@ -12,7 +12,8 @@ tags:
 
 ## Démarche Créative
 
-Seabloom a pour but principal de protéger la faune marine. En proposant des produits issus de la flore marine, Seabloom espère séduire les consommateurs végans et les personnes souhaitant réduire leurs consommations de viande. Dans cette logique, j'ai voulu représenter cette flore précieuse et protectrice de la faune marine.
+Seabloom a pour but principal de protéger la faune marine. En proposant des produits issus de la flore marine, Seabloom espère séduire les consommateurs végans et les personnes souhaitant réduire leurs consommations de viande. 
+Dans cette logique, j'ai voulu représenter cette flore précieuse et protectrice de la faune marine.
 
 
 <div class="half"> 

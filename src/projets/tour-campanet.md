@@ -12,7 +12,7 @@ tags:
 
 ## Démarche créative
 
-J'étais intéressé par la volonté de la marque à cibler un public plus jeune. J'ai donc d'abord effectué des recherches pour savoir, ce que les concurrents pouvaient proposer. Pour ensuite déterminer ce qui pouvait être une élément de différenciation. À la suite de ces recherches, que l'idée de représenter un élément abstrait comme les saveurs est venue. Le vin est l'élément par excellence des saveurs, il fallait donc les représenter en équilibre.
+J'ai été attiré par la stratégie de la marque visant à cibler un public plus jeune. J'ai donc effectué une étude de marché pour évaluer l'offre de la concurrence et déterminer les opportunités de différenciation. Suite à cette analyse, j'ai proposé l'idée de représenter les saveurs sous forme d'un élément abstrait, le vin étant un élément emblématique des saveurs. L'objectif était de créer une image originale et équilibrée pour représenter l'univers des saveurs.
 
 <img src="/projets/img/tourCampanet/recherches.jpg" alt="papier de recherche sur l'equilibre et les saveurs"/>
  <figcaption>Recherches sur l'equilibre et la représentation des saveurs</figcaption> 

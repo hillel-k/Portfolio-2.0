@@ -12,7 +12,9 @@ tags:
 
 ## Démarche Créative 
 
-Les porteurs du projet avaient une idée de centre médicale avec une esthétique haut de gamme. J'ai d'abord proposé un logo "Signature", qui met en avant un sentiment de proximité avec les patients. Comme une ordonnance signée de manière élégante. Puis en faisant des recherches sur les logos géométriques. J'ai arrangé des points de couleurs en forme d'iris qui apporte de la vie au logo. C'est l'idée qui sera retenue.
+Les porteurs du projet souhaitaient créer un centre médical haut de gamme. Pour répondre à cette demande, j'ai d'abord proposé un logo "Signature" qui met en avant un sentiment de proximité et de confiance avec les patients, comme une ordonnance signée de manière élégante. 
+
+J'ai également étudié différentes options de logos géométriques pour proposer une solution innovante et distincte. Mon choix s'est porté sur un logo composé de points de couleurs en forme d'iris, qui apporte de la vie et de la modernité au logo. Cette proposition a été retenue par les porteurs du projet.
 
 
 <div>

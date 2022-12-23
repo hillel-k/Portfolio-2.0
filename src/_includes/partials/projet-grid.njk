@@ -1,6 +1,6 @@
 {%- set lazyImage = "data:image/svg+xml,%3Csvg%20xmlns%3D'http%3A%2F%2Fwww.w3.org%2F2000%2Fsvg'%20viewBox%3D'0%200%201%201'%20height%3D'500'%20width%3D'960'%20style%3D'background-color%3Argb(203%2C213%2C224)'%2F%3E" -%}
 {% for projet in paged.projets %}
-<div class="w-full sm:w-1/2 md:w-1/2 self-stretch p-2 mb-2">
+<div class="w-11/12 sm:w-1/2 md:w-1/2 mx-auto self-stretch p-2 mb-2">
     <div class="h-full">
         <a href="{{ projet.url | url }}">
             <img class="w-full m-0 lazy rounded-sm shadow-sm " src="{{ lazyImage }}" data-src="{% if projet.data.thumb %}{{ projet.data.thumb | url }}{% else %}{{ '/assets/img/no-image.svg' | url }}{% endif %}" width="auto" height="auto" alt="This projet thumbnail">

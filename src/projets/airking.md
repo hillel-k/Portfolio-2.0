@@ -10,20 +10,27 @@ tagProjet:
 ---
 
 ## Démarche créative
+Airking est une agence de communication spécialisée dans la création de contenus de nouvelle génération. Parmi les domaines d'expertise de l'agence figurent la Web 3.0, les cryptomonnaies et les NFT. Pour répondre aux besoins de cette clientèle, j'ai créé des visuels inspirés par des éléments qui jouent sur la frontière entre réalité et virtualité. J'ai utilisé des objets détournés par le choix des matériaux et leurs actions, ajoutant une touche de surréalisme pour donner un aspect unique et original à mes créations. Mon objectif était de créer des contenus qui s'intègrent parfaitement dans le monde de la Web 3.0 et de la crypto monnaie, tout en proposant une esthétique innovante et originale.
 
-J'étais intéressé par la volonté de la marque à cibler un public plus jeune. J'ai donc d'abord effectué des recherches pour savoir, ce que les concurrents pouvaient proposer. Pour ensuite déterminer ce qui pouvait être une élément de différenciation. À la suite de ces recherches, que l'idée de représenter un élément abstrait comme les saveurs est venue. Le vin est l'élément par excellence des saveurs, il fallait donc les représenter en équilibre.
 
-<img src="/projets/img/tourCampanet/recherches.jpg" alt="papier de recherche sur l'equilibre et les saveurs"/>
- <figcaption>Recherches sur l'equilibre et la représentation des saveurs</figcaption> 
+<video width="100%" height="auto" loop autoplay muted>
+  <source src="/projets/img/airking/heroVideo.mp4" type="video/mp4">
+Your browser does not support the video tag.
+</video>
+<p>Animation 3D - Section Hero</p>
 
-<img class="rounded imgProjet" src="/projets/img/tourCampanet/etiquetteViolet.jpg" alt="etiquette violette"/>
-<figcaption>Visuel final du vin rouge, Mon coeur violette</figcaption> 
+<video width="100%" height="auto" loop autoplay muted>
+  <source src="/projets/img/airking/main.mp4" type="video/mp4">
+Your browser does not support the video tag.
+</video>
 
-<img class="rounded imgProjet" src="/projets/img/tourCampanet/etiquetteRose.jpg" alt="etiquette rose"/>
-<figcaption>Visuel final du rosé, Bois des fées</figcaption> 
+<video width="100%" height="auto" loop autoplay muted>
+  <source src="/projets/img/airking/loopRing.webm" type="video/webm">
+Your browser does not support the video tag.
+</video>
 
-<img class="rounded imgProjet" src="/projets/img/tourCampanet/etiquetteBleu.jpg" alt="etiquette bleu"/>
-<figcaption>Visuel final du vin blanc, Bois des fées</figcaption> 
+
+
 
 <img class="rounded imgProjet" src="/projets/img/tourCampanet/gammePresentation.jpg" alt="mockup des 3 etiquettes"/>
 <figcaption>Mockup de la gamme de bouteilles</figcaption> 

@@ -10,6 +10,8 @@ tags:
   - Site Internet
 ---
 
+Arfi-Khiat Avocat est un cabinet d'avocats implanté à Marseille. Pour refléter l'identité de ce cabinet, j'ai conçu un logo moderne et élégant, mettant en avant les initiales du nom du cabinet. Ensuite, j'ai créé une maquette de site web pour mettre en valeur les domaines d'expertise du cabinet. J'ai  mis en place de nombreux CTA de contact pour inciter les visiteurs à prendre contact avec le cabinet et obtenir des informations complémentaires sur les services proposés.
+
 
 <img class="rounded imgProjet"  src="/projets/img/avocat/logoContraste.jpg" alt="logo sur fond blanc et noir"/>
  <figcaption> Test de contraste du logo</figcaption> 

@@ -12,12 +12,12 @@ tags:
 ---
 ## Présentation
 
-Ma Box Pharma propose un service de box personnalisé par des pharmaciens selon vos besoins bien-être et beauté : stress, soleil, sommeil... Chaque box est unique et conçu d'après les demandes formulées lors d'un entretien avec un pharmacien.
+Ma Box Pharma est une entreprise qui propose un service de box personnalisé par des pharmaciens professionnels. Ces derniers élaborent chaque box selon les besoins en bien-être et en beauté de chaque client, en prenant en compte des thématiques telles que le stress, le soleil, le sommeil, etc. Chaque box est unique et conçue sur mesure, en fonction des demandes exprimées lors d'un entretien avec un pharmacien. Ce service permet de répondre aux besoins spécifiques de chaque client et de leur offrir des produits adaptés à leurs attentes.
 
 <img class="rounded imgProjet" src="/projets/img/maBoxPharma/logoSituation.jpg " alt="Logo situation"/>
  <figcaption>Proposition d'indenté visuelle</figcaption> 
 
-La marque vise principalement une clientèle féminine et déjà cliente en parapharmacie. Il est plus facile d'apporter un conseil plus pertinent à une personne qui connaît ses préférences avec des ingrédients et parfums.
+"La marque s'adresse principalement à une clientèle féminine et déjà familiarisée avec les produits de parapharmacie. Cela permet de mieux conseiller les clients en fonction de leurs préférences en matière d'ingrédients et de parfums, et d'offrir des produits adaptés à leurs besoins. En ciblant une clientèle déjà initiée aux produits de parapharmacie, la marque peut mieux répondre aux attentes de ses clients et leur proposer des produits de qualité
 
 <img class="rounded imgProjet" src="/projets/img/maBoxPharma/logoContraste.jpg " alt="Logo contraste"/>
  <figcaption>Test de contraste du logo</figcaption> 
@@ -27,7 +27,7 @@ La marque vise principalement une clientèle féminine et déjà cliente en para
 <img class="rounded imgProjet" src="/projets/img/maBoxPharma/cover.jpg " alt="presentation de 3 produits"/>
  <figcaption>Visuels "Mise en avant 3 produits"</figcaption> 
 
-L'idée derrière la marque est de reproduire les éléments graphiques utilisés lors d'un échange traditionnel avec son pharmacien. Une annotation sur la boîte de médicament pour sa posologie ou un post-it pour une recommandation d'un produit en parapharmacie. Attention cependant à ne pas les confondre avec celui du médecin, le service proposé n'est en aucun cas une substitution à une ordonnance.
+La marque a pour objectif de reproduire visuellement les éléments graphiques utilisés lors de l'échange traditionnel entre un pharmacien et un patient. Ces éléments peuvent être des annotations sur la boîte de médicament pour indiquer la posologie, ou des post-it pour recommander un produit en parapharmacie. Cependant, il est important de ne pas confondre ces éléments avec ceux utilisés par un médecin : le service proposé par la marque ne remplace en aucun cas une ordonnance médicale.
 
 <div>
 
@@ -39,7 +39,7 @@ L'idée derrière la marque est de reproduire les éléments graphiques utilisé
 
 </div>
 
-Pour les visuels, il a été question de proposer un univers médical, en renforçant l'idée de bien-être. Le côté médicament et maladie ne devait pas être présent. Cette direction se retrouve dans le choix des couleurs pastel, plus douce a l'œil. Les murs texturés apportent eux, de la chaleur dépourvue des murs de médicaments habituellement présents dans les pharmacies
+Pour les visuels, la marque j'ai choisi de proposer un univers médical axé sur le bien-être, en évitant de mettre en avant les aspects médicament et maladie. Pour cela, des couleurs pastel douces ont été privilégiées, ainsi que des murs texturés chaleureux qui se distinguent des murs habituellement présents dans les pharmacies. Le choix de ces éléments vise à créer une ambiance agréable et rassurante pour les patients
 
 <img class="rounded imgProjet" src="/projets/img/maBoxPharma/boxEvolution.gif " alt="évolution du visuel du site"/>
  <figcaption>Evolution du visuel Box</figcaption> 
