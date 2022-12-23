@@ -1,9 +1,9 @@
 ---
 title: Airking
-description: Rajeunir une gamme de bouteille de vin
+description: Imaginer l'agence du futur
 author: "Hillel K."
 date: 2022-05-10
-thumb: coverAirking.jpg
+thumb: heroVideo.gif
 tagProjet:
   - 3D 
   - Site Internet
