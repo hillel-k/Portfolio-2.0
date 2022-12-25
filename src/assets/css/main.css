@@ -300,9 +300,45 @@ figcaption {
 }
 
 .serviceCell {
-  background-color: white;
+  background-color: #f6f9f6;
   border: #3B683E 2px solid;
   border-radius: 10px;
+}
+
+.accordion {
+  background-color: #e7eee7;
+  color: #3B683E;
+  border-radius: 8px;
+  border: 1px #3B683E solid;
+  cursor: pointer;
+  padding: 18px;
+  width: 100%;
+  text-align: left;
+  transition: 0.4s;
+}
+
+.active, .accordion:hover {
+  background-color: #ccc;
+}
+
+.accordion:after {
+  content: '\002B';
+  color: #777;
+  font-weight: bold;
+  float: right;
+  margin-left: 5px;
+}
+
+.active:after {
+  content: "\2212";
+}
+
+.panel {
+  padding: 0 18px;
+  background-color: white;
+  max-height: 0;
+  overflow: hidden;
+  transition: max-height 0.2s ease-out;
 }
 
 .contactWrap {

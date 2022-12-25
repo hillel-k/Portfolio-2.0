@@ -30,15 +30,16 @@ module.exports = (config) => {
   config.addTransform('minifyHtml', require('./lib/transforms/minifyHtml'));
 
   config.addCollection('posts', require('./lib/collections/posts'));
-  config.addCollection('tagList', require('./lib/collections/tagList'));
+
   config.addCollection('pagedPosts', require('./lib/collections/pagedPosts'));
-  config.addCollection('pagedPostsByTag', require('./lib/collections/pagedPostsByTag'));
+
   
   //Collection projets
   config.addCollection('projets', require('./lib/collections/projets'));
-  config.addCollection('tagProjet', require('./lib/collections/tagProjet'));
   config.addCollection('pagedProjets', require('./lib/collections/pagedProjets'));
-  config.addCollection('pagedProjetsByTag', require('./lib/collections/pagedProjetsByTag'));
+
+  config.addCollection('pagedPostsByTag', require('./lib/collections/pagedPostsByTag'));
+  config.addCollection('tagList', require('./lib/collections/tagList'));
   
   return {
     dir: {

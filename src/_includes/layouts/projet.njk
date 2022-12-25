@@ -7,10 +7,10 @@ layout: default
 
         <h1 class="text-4xl text-center font-bold text-gray-900 mt-0">{{ title }}</h1>
         <div class="text-center">Réalisé en {{ page.date | readableDate }}</div>
-        {% if tagProjet %}
+        {% if tags %}
         <div class="mt-3 text-center">
-            {% for tag in tagProjet %}
-            <a href="{{ '/tagProjet/' | url }}{{ tag }}" class="inline-block bg-gray-200 rounded-full px-3 py-1 text-sm font-medium text-gray-700 m-0.5">#{{ tag }}</a>
+            {% for tag in tags %}
+            <a href="{{ '/tags/' | url }}{{ tag }}" class="inline-block bg-gray-200 rounded-full px-3 py-1 text-sm font-medium text-gray-700 m-0.5">#{{ tag }}</a>
             {% endfor %}
         </div>
         {% endif %}
