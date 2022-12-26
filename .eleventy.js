@@ -2,8 +2,6 @@ const pluginTailwind = require('eleventy-plugin-tailwindcss');
 const Image = require("@11ty/eleventy-img")
 
 
-
-
 module.exports = (config) => {
   config.addPlugin(pluginTailwind, {
     src: 'src/assets/css/*'

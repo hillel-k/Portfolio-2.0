@@ -31,6 +31,10 @@
     <meta name="keywords" content="{{ metaKeywords }}">
     <meta name="author" content="{{ author.name }}">
     <meta name="robots" content="index, follow">
+
+    <meta name="theme-color" content="##3b683e" />
+
+
     <link rel="canonical" href="{{ site.url | url }}{{ page.url }}">
     <link rel="shortcut icon" type="image/png" href="{{ '/assets/img/favicon.png' | url }}">
     <link rel="apple-touch-icon" href="{{ '/assets/img/apple-touch-icon.png' | url }}">
@@ -47,10 +51,10 @@
     <link rel="stylesheet" href="{{ '/assets/css/main.css' | url }}">
 </head>	
 
-<body class="flex flex-col h-screen text-gray-800 break-words">
+<body class="flex flex-col h-screen text-gray-800 break-words" >
     {% include "partials/header.njk" %}
-    <main class="mt-2 flex-grow">
-        <div  data-scroll-container>
+    <main class="mt-2 flex-grow" id="swup" class="swup-transition-fade">
+        <div>
             {% if layout === "post" %}
             {{ content | safe }}
             {% else %}
@@ -62,12 +66,17 @@
     </main>
     {% include "partials/footer.njk" %}
 
+    
+
+
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/flickity/2.3.0/flickity.pkgd.min.js"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/ScrollTrigger/1.0.5/ScrollTrigger.min.js"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.10.4/gsap.min.js"></script>
     <script src="https://unpkg.com/@lottiefiles/lottie-player@latest/dist/lottie-player.js"></script>
-    <script src="https://unpkg.com/swup@latest/dist/swup.min.js"></script>  
-
+    <script src="https://cdn.jsdelivr.net/npm/swup@1.0.4/dist/swup.min.js"></script>
     <script src="{{ '/assets/js/bundle.js' | url }}"></script>
+
+
 
 </body>
 

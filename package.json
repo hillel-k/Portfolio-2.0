@@ -32,6 +32,8 @@
 		"terser": "^4.8.1"
 	},
 	"dependencies": {
+		"@swup/js-plugin": "^1.0.5",
+		"@swup/slide-theme": "^1.0.5",
 		"locomotive-scroll": "^4.1.4",
 		"scrambling-text": "^1.2.0",
 		"swup": "^2.0.19"

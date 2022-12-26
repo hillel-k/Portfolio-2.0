@@ -59,14 +59,8 @@ p{
     line-height: 1.5rem;
 }
 
-.transition-fade {
-  transition: 0.4s;
-  opacity: 1;
-}
 
-html.is-animating .transition-fade {
-  opacity: 0;
-}
+
 
 .m-0-auto {
   margin: 0 auto 0 auto;
@@ -463,4 +457,12 @@ textarea {
   outline: 0;
   padding: .7em;
   transition: .1s cubic-bezier(.25,.46,.45,.94);
+}
+
+.swup-transition-fade {
+  transition: 0.4s;
+  opacity: 1;
+}
+html.is-animating .swup-transition-fade {
+  opacity: 0;
 }
