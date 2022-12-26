@@ -12,8 +12,7 @@
         "url": "/blog"
     },
     {
-        "label": "Instagram",
-        "url": "https://www.instagram.com/iamhillelk/",
-        "newTab": true
+        "label": "Contact",
+        "url": "/contact"
     }
 ]

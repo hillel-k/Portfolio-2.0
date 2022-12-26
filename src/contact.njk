@@ -1,0 +1,47 @@
+---
+layout: default
+title: Contact
+
+---
+
+
+<section class="p-6 max-w-5xl mx-auto mb-6">
+
+    <div class="bg-white rounded p-6 sm:p-4 pt-10 sm:p-12 shadow-lg">
+        <div class="container text-center">
+            <h1 class="text-portfolio-vert">Formulaire de contact</h1>
+            <div class="divider bg-portfolio-vert mx-auto w-3/4 my-4"></div>
+            <h3>Vous avez une question ou un projet en tête ? <br></h3>
+            <span class="font-light text-sm"> N'hésitez pas à remplir ce formulaire et je vous répondrai dans les plus
+                brefs délais.</span>
+
+        </div>
+
+
+        <div class="formulaireContact">
+            <form name="contact" method="POST" data-netlify="true">
+
+                <label for="nom">Nom, Prénom (*) :</label>
+                <input required type="text" id="nom" name="nom" placeholder="Jean Dupont"><br>
+
+                <label for="contact">Email (*) :</label>
+                <input required type="email" id="mail" name="email" placeholder="jean26@gmail.com"><br>
+
+                <label for="details">Message (*) :</label>
+                <textarea required id="details" name="details" rows="4"
+                    placeholder="Bonjour, je souhaite .."></textarea>
+
+                <button type="submit">Soumettre</button>
+                <p>(*) Tous les champs sont obligatoires.</p>
+            </form>
+        </div>
+
+        <div class="divider bg-portfolio-vert mx-auto w-3/4 mt-10"></div>
+
+        <div class="text-center mt-9">
+            <h2 class="text-xl">Ou directement par mail</h2>
+            <a class="underline vert" href="mailto:contact@hillel-khiat.com">contact@hillel-khiat.com</a>
+        </div>
+
+    </div>
+</section>

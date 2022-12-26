@@ -1,5 +1,23 @@
-<footer class="mt-20 px-10 py-8 border-t-2 text-sm ">
-    <div class="max-w-5xl mx-auto font-light">
-        © 2022 <a href="{{ '/' | url }}" target="_blank" rel="noopener">{{ site.title }}</a>
+<footer class="mt-20 px-10 py-8 border-t-2 border-portfolio-vert w-5/6 m-0-auto text-sm ">
+    <div class="max-w-5xl mx-auto font-light flex flex-col sm:flex-row justify-between items-center ">
+        <div>
+            <a class="flex items-center" href="{{ '/' | url }}">
+                <img class="w-9 hover:translate-x-4 mb-6 sm:mb-0" src="\assets\img\logo.svg">
+            </a>
+           
+        </div> 
+
+        <div class="flex items-center flex-col sm:flex-row gap-3">
+                <a class="ml-0 sm:ml-4" href="/a-propos">À Propos</a>
+                <a class="ml-0 sm:ml-4" href="/projets">Projets</a>
+                <a class="ml-0 sm:ml-4" href="/blog">Blog</a>
+                
+                <div class="flex flex-row mb-12 sm:mb-0">
+                    <p class="ml-0 sm:ml-4 mr-6">© 2023 <a href="/"> Hillel K.</a></p>
+                    <a class="ml-0 sm:ml-4" href="https://www.instagram.com/iamhillelk/" target="_blank"><img src="/assets/img/instagram.svg" alt="logo instagram" width="20rem" srcset=""></a>
+                </div>
+
+
+        </div>
     </div>
 </footer>

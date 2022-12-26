@@ -125,7 +125,12 @@ html.is-animating .transition-fade {
 }
 
 .prose img {
-  margin-bottom: .9rem;
+  margin: 1rem auto 1rem auto;
+}
+
+.prose h2 {
+  max-width: 700px;
+  margin: 3rem auto 1.5rem auto ;
 }
 
 .prose p {
@@ -291,8 +296,10 @@ figcaption {
   background-color: #F7F8F7;
   border-radius: 10px;
   border: #3B683E 1px solid;
-  padding: 5px;
-  color: black;
+  padding: 0.4rem 0.8rem;
+  color: #142315;
+  font-weight: 400;
+  font-size: 1rem;
   width: fit-content;
   margin: 10px;
   margin-top: 12px;
@@ -303,6 +310,12 @@ figcaption {
   background-color: #f6f9f6;
   border: #3B683E 2px solid;
   border-radius: 10px;
+  transition: cubic-bezier(0.6, 0.04, 0.98, 0.335) 0.2s;
+}
+
+.serviceCell:hover {
+  transition: cubic-bezier(0.6, 0.04, 0.98, 0.335);
+  background-color: #c1d1c1;
 }
 
 .accordion {
@@ -312,13 +325,15 @@ figcaption {
   border: 1px #3B683E solid;
   cursor: pointer;
   padding: 18px;
+  margin-bottom: 10px;
   width: 100%;
   text-align: left;
   transition: 0.4s;
 }
 
 .active, .accordion:hover {
-  background-color: #ccc;
+  background-color: #3b683e;
+  color: white;
 }
 
 .accordion:after {
@@ -353,13 +368,24 @@ figcaption {
   .grilleService {
     max-width: 95%;
     grid-template-columns: 1fr;
-    grid-template-rows: repeat(5, 1fr);
+    grid-template-rows: auto;
     } 
     .serviceDiv1 { grid-area: 1 }
     .serviceDiv2 { grid-area: 2 }
     .serviceDiv3 { grid-area: 3 }
     .serviceDiv4 { grid-area: 4 }
     .serviceDiv5 { grid-area: 5 }
+
+    .div1{
+      border-bottom: #3b683e 1px solid;
+      border-right: #3b683e 0px solid;
+    }
+
+    .div3{
+      border-bottom: #3b683e 1px solid;
+      border-right: #3b683e 0px solid;
+    }
+
 
     #facts{
       flex-direction: column;
@@ -368,6 +394,18 @@ figcaption {
     grid-template-columns: 1fr;
     grid-template-rows: repeat(4, 1fr);
     } 
+
+    #menu {
+      background-color: #e2eae1;
+      padding: 1.2rem;
+      border-radius: 8px;
+    }
+
+    #menuLink {
+      border-bottom: 1px solid #3b683e;
+      padding: 0.5rem 0rem;
+      margin: 0;
+    }
 
  
 }
@@ -388,4 +426,41 @@ figcaption {
   align-items: center;
   justify-content: center;
   flex-direction: column;
+}
+
+
+form {
+  display: flex;
+  flex-direction: column;
+  margin: 2rem auto 0;
+  max-width: 600px;
+  overflow-y: auto;
+}
+
+input {
+  background: #fff;
+  border: 1px solid #9c9c9c;
+  box-sizing: border-box;
+  margin-bottom: .5rem;
+  outline: 0;
+  padding: .7em;
+  transition: .1s cubic-bezier(.25,.46,.45,.94);
+}
+
+form button {
+  background: #d3d3d3;
+  border: 0;
+  margin-top: 20px;
+  padding: .7em;
+  width: 100%;
+}
+
+textarea {
+  background: #fff;
+  border: 1px solid #9c9c9c;
+  box-sizing: border-box;
+  margin-bottom: .5rem;
+  outline: 0;
+  padding: .7em;
+  transition: .1s cubic-bezier(.25,.46,.45,.94);
 }
