@@ -12,19 +12,20 @@ tags:
 ---
 ## Présentation
 
-Ma Box Pharma est une entreprise qui propose un service de box personnalisé par des pharmaciens professionnels. Ces derniers élaborent chaque box selon les besoins en bien-être et en beauté de chaque client, en prenant en compte des thématiques telles que le stress, le soleil, le sommeil, etc. Chaque box est unique et conçue sur mesure, en fonction des demandes exprimées lors d'un entretien avec un pharmacien. Ce service permet de répondre aux besoins spécifiques de chaque client et de leur offrir des produits adaptés à leurs attentes.
+Ma Box Pharma est une entreprise qui propose un service de box personnalisé par des pharmaciens professionnels. Ces derniers élaborent chaque box selon les besoins en bien-être et en beauté de chaque client, en prenant en compte des thématiques telles que le stress, le soleil, le sommeil, etc. Chaque box est unique et conçue sur mesure, en fonction des demandes exprimées lors d'un entretien avec un pharmacien. 
+Ce service permet de répondre aux besoins spécifiques de chaque client et de leur offrir des produits adaptés à leurs attentes.
 
 <img class="rounded imgProjet" src="/projets/img/maBoxPharma/logoSituation.jpg " alt="Logo situation"/>
  <figcaption>Proposition d'indenté visuelle</figcaption> 
 
-"La marque s'adresse principalement à une clientèle féminine et déjà familiarisée avec les produits de parapharmacie. Cela permet de mieux conseiller les clients en fonction de leurs préférences en matière d'ingrédients et de parfums, et d'offrir des produits adaptés à leurs besoins. En ciblant une clientèle déjà initiée aux produits de parapharmacie, la marque peut mieux répondre aux attentes de ses clients et leur proposer des produits de qualité
+La marque s'adresse principalement à une clientèle féminine et déjà familiarisée avec les produits de parapharmacie. Cela permet de mieux conseiller les clients en fonction de leurs préférences en matière d'ingrédients et de parfums, et d'offrir des produits adaptés à leurs besoins. En ciblant une clientèle déjà initiée aux produits de parapharmacie, la marque peut mieux répondre aux attentes de ses clients et leur proposer des produits de qualité
 
 <img class="rounded imgProjet" src="/projets/img/maBoxPharma/logoContraste.jpg " alt="Logo contraste"/>
  <figcaption>Test de contraste du logo</figcaption> 
 
 ## Démarche Créative
 
-<img class="rounded imgProjet" src="/projets/img/maBoxPharma/cover.jpg " alt="presentation de 3 produits"/>
+<img class="rounded imgProjet" src="/projets/img/maBoxPharma/coverMaBoxPharma.jpg " alt="presentation de 3 produits"/>
  <figcaption>Visuels "Mise en avant 3 produits"</figcaption> 
 
 La marque a pour objectif de reproduire visuellement les éléments graphiques utilisés lors de l'échange traditionnel entre un pharmacien et un patient. Ces éléments peuvent être des annotations sur la boîte de médicament pour indiquer la posologie, ou des post-it pour recommander un produit en parapharmacie. Cependant, il est important de ne pas confondre ces éléments avec ceux utilisés par un médecin : le service proposé par la marque ne remplace en aucun cas une ordonnance médicale.

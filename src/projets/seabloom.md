@@ -17,7 +17,7 @@ Dans cette logique, j'ai voulu représenter cette flore précieuse et protectric
 
 
 <div class="half"> 
-<img class="rounded shadow" src="/projets/img/seabloom/logo.jpg" alt="Mockup du logo"/>
+<img class="rounded shadow" src="/projets/img/seabloom/logoSeabloom.jpg" alt="Mockup du logo"/>
  <figcaption>Mockup du logo en Couleur</figcaption> 
 </div>
 
