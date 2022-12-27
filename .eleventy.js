@@ -15,6 +15,11 @@ module.exports = (config) => {
   config.addPassthroughCopy({ 'src/posts/img/**/*': 'assets/img/' });
   config.addPassthroughCopy({ 'src/projets/img/**/*': 'assets/img/' });
 
+  //JS Modules
+
+  config.addPassthroughCopy('./src/assets/js/modularLoad.js');
+  config.addPassthroughCopy('./src/assets/js/transition.js');
+
 
   config.addWatchTarget("src/assets/js/");
 

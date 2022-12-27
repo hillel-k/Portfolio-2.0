@@ -488,10 +488,21 @@ textarea {
   transition: .1s cubic-bezier(.25,.46,.45,.94);
 }
 
-.swup-transition-fade {
-  transition: 0.4s;
-  opacity: 1;
+
+.coverTransition {
+  background-color: rgba(39, 39, 39, 0.863);
+  height: 100%;
+  position: fixed;
+  top: 0;
+  left: 0;
+  z-index: 999;
 }
-html.is-animating .swup-transition-fade {
-  opacity: 0;
+.coverTransition2 {
+  background-color: rgb(59, 104, 62);
+  height: 100%;
+  position: fixed;
+  top: 0;
+  left: 0;
+  z-index: 998;
 }
+

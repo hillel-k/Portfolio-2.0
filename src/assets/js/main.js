@@ -51,9 +51,11 @@ document.addEventListener('DOMContentLoaded', () => {
   });
 }, false);
 
+
+
+
+
 //ScrollTrigger Animation
-
-
 
 /*var sections = gsap.utils.toArray('.projetCell, #facts, #catProjet, #FAQ, #contactSection, #detailsProjet');
 
@@ -72,38 +74,10 @@ sections.forEach((section) => {
 })*/
 
 
-//Swup 
-
-/*const options = [
-  {
-    from: '(.*)',
-    to: '(.*)',
-    in: function(next) {
-      document.querySelector('#swup').style.opacity = 0;
-      TweenLite.to(document.querySelector('#swup'), 0.5, {
-        opacity: 1,
-        onComplete: next
-      });
-    },
-    out: (next) => {
-      document.querySelector('#swup').style.opacity = 1;
-      TweenLite.to(document.querySelector('#swup'), 0.5, {
-        opacity: 0,
-        onComplete: next
-      });
-    }
-  }
-];
-
-const swup = new Swup({
-  plugins: [new SwupJsPlugin(options)]
-});*/
-
-// Scramble Text
 
 
 
-//Animation 
+//Animation GSAP 
 
 gsap.registerPlugin(ScrollTrigger);
 
@@ -123,7 +97,10 @@ gsap.from(".RL2", { x: 300, duration: 2});
 
 
 
-// Accordion
+
+
+// Accordion FAQ
+
 var acc = document.getElementsByClassName("accordion");
 var i;
 
@@ -139,7 +116,12 @@ for (i = 0; i < acc.length; i++) {
   });
 }
 
-//Caroussel 
+
+
+
+
+//Caroussel FLickity
+
 var flkty = new Flickity( '.gallery-cell', {
   imagesLoaded: true,
   percentPosition: false
@@ -148,11 +130,12 @@ var flkty = new Flickity( '.gallery-cell', {
 var caption = document.querySelector('#caption');
 
 flkty.on( 'select', function() {
-  // set image caption using img's alt
   caption.textContent = flkty.selectedElement.alt;
 });
 
 
-//Scroll
+
+
+
 
 
