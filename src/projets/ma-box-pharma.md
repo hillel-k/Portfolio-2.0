@@ -2,7 +2,7 @@
 title: Ma Box Pharma
 description: Concevoir l'identité d'un service de box personnalisé
 author: Hillel K.
-date: 2022-04-04T09:43:52.627Z
+date: 2022-04-04
 annee: 2022
 thumb: coverMaboxPharma.jpg
 tags:

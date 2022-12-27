@@ -1,9 +1,9 @@
 ---
-title: Airking
-description: Conception de l'agence du futur
+title: Vital
+description: Modérnisation de l'entreprise
 author: "Hillel K."
-date: 2022-05-10
-thumb: heroVideo.gif
+date: 2022-04-03
+thumb: coverVital.jpg
 tags:
   - 3D 
   - Site Internet

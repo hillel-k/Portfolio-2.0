@@ -9,14 +9,14 @@ layout: default
         <div class="text-center">Réalisé en {{ page.date | readableDate }}</div>
         {% if tags %}
         <div class="mt-3 text-center">
-            {% for tag in tags %}
+           <!--{% for tag in tags %}
             <a href="{{ '/tags/' | url }}{{ tag }}" class="inline-block bg-gray-200 rounded-full px-3 py-1 text-sm font-medium text-gray-700 m-0.5">#{{ tag }}</a>
-            {% endfor %}
+            {% endfor %}--> 
         </div>
         {% endif %}
         {% if thumb %}
         <div class="mt-10 -mx-7 md:mx-0">
-            <img class="w-full max-w-2xl mx-auto overflow-hidden" src="{{ thumb | url }}" alt="This project thumbnail">
+            <img class="w-full max-w-2xl mx-auto overflow-hidden shadow-md rounded-lg" src="{{ thumb | url }}" alt="This project thumbnail">
         </div>
         {% endif %}
     </header>
