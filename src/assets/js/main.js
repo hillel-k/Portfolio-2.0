@@ -84,7 +84,8 @@ gsap.registerPlugin(ScrollTrigger);
 const preload = gsap.timeline ({delay:0.2});
 preload.to("#preload", {duration: 2, ease: "power4.out", x: "100%" });
 preload.to("#preload2", {duration: 3, ease: "power4.out", x: "100%" },"-=1.8");
-preload.to("#preload #preload2", {autoAlpha:0})
+preload.to("#preload", {autoAlpha:0, "display":"none" },"-=1.8")
+preload.to("#preload2", {autoAlpha:0, "display":"none" },"-=1.8")
 
 /*let videoElem1 = document.querySelector('#teteVideo');
 videoElem1.play();*/

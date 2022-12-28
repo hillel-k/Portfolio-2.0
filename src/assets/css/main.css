@@ -131,14 +131,14 @@ p{
   border-radius: 10px;
   border: #3B683E solid 1px;
   margin-top: 15rem;
-  margin-bottom: 7rem;
+  margin-bottom: 1rem;
 }
 
 
 .imgAvis {
   position: absolute;
   left: 50%;
-  bottom: 165px;
+  bottom: 195px;
   transform: translateX(-50%);
 }
 
@@ -460,7 +460,7 @@ figcaption {
     }
 
     .imgAvis {
-      bottom: 80%;
+      bottom: 82%;
     }
 
  
