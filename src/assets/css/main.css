@@ -59,11 +59,22 @@ p{
     line-height: 1.5rem;
 }
 
-
-
-
 .m-0-auto {
   margin: 0 auto 0 auto;
+}
+
+#preload, #preload2 {
+  position: absolute;
+  width: 100vw;
+  height: 100vh;
+  top: 0;
+  background-color: #3B683E;
+  z-index: 900;
+}
+#preload2 {
+  background-color: #142315;
+  z-index: 899;
+
 }
 
 .textIntro {

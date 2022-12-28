@@ -81,12 +81,10 @@ sections.forEach((section) => {
 
 gsap.registerPlugin(ScrollTrigger);
 
-const tl = gsap.timeline({delay:0.6})
-.from("#introImg", {scale:1.8, duration:.6})
-.to("#maskIntro", {clipPath:"polygon(0% 0%, 100% 0%, 100% 100%, 0% 100%)"}, 0)
-.to("#maskIntro", {scale:1, duration:0.4}, -.5)
-.to("#maskIntro", {scale:1, duration:0.2})
-;
+const preload = gsap.timeline ({delay:0.2});
+preload.to("#preload", {duration: 2, ease: "power4.out", x: "100%" });
+preload.to("#preload2", {duration: 3, ease: "power4.out", x: "100%" },"-=1.8");
+preload.to("#preload #preload2", {autoAlpha:0})
 
 /*let videoElem1 = document.querySelector('#teteVideo');
 videoElem1.play();*/

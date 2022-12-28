@@ -10,7 +10,7 @@ tags:
 ---
 
 ## Démarche créative
-Airking est une agence de communication spécialisée dans la création de contenus de nouvelle génération. Parmi les domaines d'expertise de l'agence figurent la Web 3.0, les cryptomonnaies et les NFT.
+Créée en 1966, Vital est une société d'import/export de denrées alimentaires basée à Vitrolles. La société m'a sollicité pour créer un catalogue destiné à ses clients, contenant l'intégralité de leurs offres de conserves et autres produits.
 
 
 <figure>
