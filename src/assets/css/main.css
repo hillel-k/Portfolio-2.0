@@ -125,6 +125,23 @@ p{
     border-radius: 0;
   }
 
+.avisWrapper {
+  background-color: #e2eae1 ;
+  padding: 2rem;
+  border-radius: 10px;
+  border: #3B683E solid 1px;
+  margin-top: 15rem;
+  margin-bottom: 7rem;
+}
+
+
+.imgAvis {
+  position: absolute;
+  left: 50%;
+  bottom: 165px;
+  transform: translateX(-50%);
+}
+
 #selectionProjets {
   width: 100vw;
 }
@@ -313,6 +330,7 @@ figcaption {
       width: 50%;
       margin: 1rem auto 0 auto;
     }
+    
 
   
 .servicePill {
@@ -441,6 +459,10 @@ figcaption {
       width: 100%;
     }
 
+    .imgAvis {
+      bottom: 80%;
+    }
+
  
 }
 .divider {
@@ -516,4 +538,23 @@ textarea {
   left: 0;
   z-index: 998;
 }
+#cookieBanner{
+  position: fixed;
+  bottom: 0;
+  max-width: 300px;
+  left: 0;
+  background-color: #e2eae1;
+  color: #3B683E;
+  border: #3B683E solid 1px;
+  padding: 1rem;
+  margin: 0 0 1rem 1rem;
+  border-radius: 10px;
+  font-weight: 300;
+}
 
+#cookieBanner button {
+  text-decoration: underline;
+  padding-top: 0.5rem;
+  margin-right: auto;
+  cursor: pointer;
+}
