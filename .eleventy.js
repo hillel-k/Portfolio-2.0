@@ -1,5 +1,4 @@
 const pluginTailwind = require('eleventy-plugin-tailwindcss');
-const Image = require("@11ty/eleventy-img")
 
 
 module.exports = (config) => {
@@ -19,7 +18,6 @@ module.exports = (config) => {
 
   config.addPassthroughCopy('./src/assets/js/cookieBar.js');
   config.addPassthroughCopy('./src/assets/js/transition.js');
-
 
   config.addWatchTarget("src/assets/js/");
 

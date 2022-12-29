@@ -117,10 +117,9 @@ title: Acceuil Portfolio
 </div>
 
 <section id="selectionProjets">
-  <div class="w-screen" style="background-color: #e2eae1">
+  <div>
     <div
       class="flex m-0-auto max-w-6xl align-middle items-center justify-center relative"
-      style="background-color: #e2eae1"
     >
       <img
         src="assets/img/yeux.svg"
@@ -129,18 +128,16 @@ title: Acceuil Portfolio
       />
 
       <div
-        class="main-gallery w-full"
-        style="background-color: #e2eae1"
-        data-flickity="{cellAlign: left, contain: true, wrapAround: true }"
+        class="main-gallery w-full my-3" 
+        data-flickity='{"contain" : "true", "wrapAround": "true", "pageDots": "false" }'
       >
         <div class="gallery-cell">
           <div
             class="flex w-full h-full bg-cover bg-center justify-center items-center bg-blend-multiply"
             style="
-              background-image: url(projets/img/airking/coverAirking.jpg);
+              background-image: url(/projets/img/airking/coverAirking.jpg);
               background-color: rgb(0 0 0 / 19%);
-            "
-          >
+              border-radius: 10px;">
             <a href="/airking">
               <div class="text-white">
                 <p class="italic text-center mb-3 text-3xl">2022</p>
@@ -154,6 +151,7 @@ title: Acceuil Portfolio
             style="
               background-image: url(projets/img/ophtaline/coverOphtaline.jpg);
               background-color: rgb(0 0 0 / 19%);
+              border-radius: 10px;
             "
           >
             <a href="/ophtaline">
@@ -169,6 +167,7 @@ title: Acceuil Portfolio
             style="
               background-image: url(projets/img/tourCampanet/coverTourCampanet.jpg);
               background-color: rgb(0 0 0 / 19%);
+              border-radius: 10px;
             "
           >
             <a href="/tour-campanet">
@@ -184,12 +183,6 @@ title: Acceuil Portfolio
   </div>
 </section>
 
-<div class="marquee">
-  <div class="marqueeone">Créations graphiques depuis Marseille</div>
-  <div class="marqueetwo">Conception d'identité visuelle sur-mesure</div>
-  <div class="marqueethree">Réalisation de visuels 3D</div>
-  <div class="marqueefour">3D - Identité Visuelle - Motion Design</div>
-</div>
 
 <!--
 <section class="" id="catProjet">
@@ -240,30 +233,56 @@ title: Acceuil Portfolio
 </section>-->
 
 <section id="avis max-w-xl">
-
-    <div class="max-w-3xl mx-auto">
-        <div class="avisWrapper max-w-xl text-center relative" >
-            <img src="/assets/img/siteArchitecte.jpg" alt="" srcset="" width="50%" class="imgAvis shadow-md rounded-md">
-            <p class="mb-2 mt-10">Excellente expérience ! Hillel a su répondre à mes demandes de façon efficaces et très professionnelle. 
-                Il m'a proposé divers éléments pour améliorer mon site. C'était très agréable d'échanger avec Hillel. 
-                Je ne peux que le recommander !</p>
-            <span class="italic font-semibold">Thibaut Picard Architecte</span>
-            <img src="/assets/img/avis.svg" alt="" srcset="" class="mx-auto" width="15%">
-        </div>
-    
-        <div class="avisWrapper max-w-xl text-center relative ml-auto" >
-            <img src="/assets/img/siteThe.jpg" alt="" srcset="" width="50%" class="imgAvis shadow-md rounded-md">
-            <p class="mb-2 mt-10">Je suis absolument ravi de la prestation que j'ai reçue de la part de Hillel. 
-                Il a su répondre à toutes mes questions avec rapidité et efficacité. Je n'hésiterai pas à le solliciter 
-                à nouveau pour de futurs projets</p>
-            <span class="italic font-semibold">Dan M.</span>
-            <span>Evershape</span>
-            <img src="/assets/img/avis.svg" alt="" srcset="" class="mx-auto" width="15%">
-        </div>
-
+  <div class="max-w-3xl mx-auto">
+    <div class="avisWrapper max-w-xl text-center relative">
+      <img
+        src="/assets/img/siteArchitecte.jpg"
+        alt=""
+        srcset=""
+        width="50%"
+        class="imgAvis shadow-md rounded-md"
+      />
+      <p class="mb-2 mt-10">
+        Excellente expérience ! Hillel a su répondre à mes demandes de façon
+        efficaces et très professionnelle. Il m'a proposé divers éléments pour
+        améliorer mon site. C'était très agréable d'échanger avec Hillel. Je ne
+        peux que le recommander !
+      </p>
+      <span class="italic font-semibold">Thibaut Picard Architecte</span>
+      <img
+        src="/assets/img/avis.svg"
+        alt=""
+        srcset=""
+        class="mx-auto"
+        width="15%"
+      />
     </div>
 
-
+    <div class="avisWrapper max-w-xl text-center relative ml-auto">
+      <img
+        src="/assets/img/siteThe.jpg"
+        alt=""
+        srcset=""
+        width="50%"
+        class="imgAvis shadow-md rounded-md"
+      />
+      <p class="mb-2 mt-10">
+        Je suis absolument ravi de la prestation que j'ai reçue de la part de
+        Hillel. Il a su répondre à toutes mes questions avec rapidité et
+        efficacité. Je n'hésiterai pas à le solliciter à nouveau pour de futurs
+        projets
+      </p>
+      <span class="italic font-semibold">Dan M.</span>
+      <span>Evershape</span>
+      <img
+        src="/assets/img/avis.svg"
+        alt=""
+        srcset=""
+        class="mx-auto"
+        width="15%"
+      />
+    </div>
+  </div>
 </section>
 .
 
@@ -391,11 +410,16 @@ title: Acceuil Portfolio
   </div>
 </section>
 
-
-
 <script src="https://cdnjs.cloudflare.com/ajax/libs/flickity/2.3.0/flickity.pkgd.min.js"></script>
+<script>
+  
+//Caroussel FLickity
 
+var flkty = new Flickity( '.gallery-cell', {
+  percentPosition: false
+});
 
+</script>
 
 <script>
   class TextScramble {

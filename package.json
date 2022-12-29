@@ -34,6 +34,8 @@
 	"dependencies": {
 		"@barba/core": "^2.9.7",
 		"@dogstudio/highway": "^2.2.1",
+		"@swup/body-class-plugin": "^1.0.2",
+		"@swup/debug-plugin": "^2.0.0",
 		"@swup/preload-plugin": "^1.0.5",
 		"modularload": "^1.2.8",
 		"scrambling-text": "^1.2.0",

@@ -90,20 +90,23 @@ p{
 .main-gallery{
     height: 80vh;
     width: 100%;
+    max-width: 72rem;
+
 
 }
 .gallery-cell {
     width: 100%;
     height: 100%;
     border-radius: 10px;
-    
     counter-increment: gallery-cell;
+    border-radius: 10px;
 }
 
 .gallery-cell img {
     min-height:100%; 
     min-width: 100%; 
     object-fit: cover;
+    border-radius: 10px;
 }
 
 .gallery-cell.is-selected {
@@ -116,6 +119,7 @@ p{
 
 .flickity-page-dots {
     bottom: -22px;
+    display: none;
   }
   /* dots are lines */
   .flickity-page-dots .dot {
@@ -243,7 +247,7 @@ figcaption {
   justify-content: space-around;
   width: 90%;
   max-width: 72rem;
-  margin: 0 auto 9rem auto;
+  margin: 0 auto 4rem auto;
 
 }
 
@@ -253,7 +257,7 @@ figcaption {
 }
 
 .marquee {
-    height: 45px;
+    height: 65px;
     width: 100vw;
     overflow: hidden;
     position: relative;
@@ -262,7 +266,9 @@ figcaption {
     border-bottom: 1px solid #3B683E;
     padding: 8px 0 8px 0;
     color: #3B683E;
+    font-size: 2rem;
     text-transform: uppercase;
+    margin-bottom: 2rem;
     
   }
   
@@ -562,3 +568,4 @@ textarea {
 #cookieBar .cc-bar-col .cc-bar-btn {
   background-color: #3b683e!important;
 }
+
