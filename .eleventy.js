@@ -17,7 +17,7 @@ module.exports = (config) => {
 
   //JS Modules
 
-  config.addPassthroughCopy('./src/assets/js/modularLoad.js');
+  config.addPassthroughCopy('./src/assets/js/cookieBar.js');
   config.addPassthroughCopy('./src/assets/js/transition.js');
 
 

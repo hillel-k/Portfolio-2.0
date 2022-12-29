@@ -97,12 +97,12 @@ gsap.from(".RL2", { x: 300, duration: 2});
 
 
 //Cookie Banner
-const cookieButton = document.querySelector("#cookieButton");
+/*const cookieButton = document.querySelector("#cookieButton");
 const cookieBanner = document.querySelector("#cookieBanner");
 
 cookieButton.addEventListener("click", () => gsap.set(cookieBanner, { autoAlpha: 0, duration: 2}));
 
-gsap.from("#cookieBanner", { y: 400, duration: 0.5});
+gsap.from("#cookieBanner", { y: 400, duration: 0.5});*/
 
 // Accordion FAQ
 
@@ -137,10 +137,4 @@ var caption = document.querySelector('#caption');
 flkty.on( 'select', function() {
   caption.textContent = flkty.selectedElement.alt;
 });
-
-
-
-
-
-
 

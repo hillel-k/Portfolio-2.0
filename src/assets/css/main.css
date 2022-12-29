@@ -558,3 +558,7 @@ textarea {
   margin-right: auto;
   cursor: pointer;
 }
+
+#cookieBar .cc-bar-col .cc-bar-btn {
+  background-color: #3b683e!important;
+}

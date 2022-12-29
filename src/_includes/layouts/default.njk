@@ -67,18 +67,35 @@
         </div>
     </main>
     {% include "partials/footer.njk" %}
-    {% include "partials/cookies.njk" %}
+    <div id="cookieBar"></div>
+
+    
 
     
 
 
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/flickity/2.3.0/flickity.pkgd.min.js"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/ScrollTrigger/1.0.5/ScrollTrigger.min.js"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.10.4/gsap.min.js"></script>
     <script src="https://unpkg.com/@lottiefiles/lottie-player@latest/dist/lottie-player.js"></script>
 
+
     <script src="{{ '/assets/js/bundle.js' | url }}" type="module" class="main-script"></script>
     <script src="/assets/js/transition.js" type="module"></script>
+
+    <script src="/assets/js/cookieBar.js"></script>
+    <script>new cookieBar({
+        // selector
+        selector: "#cookieBar",
+        // cookie consent message
+        message: "En poursuivant votre navigation sur ce site, vous acceptez l'utilisation de cookies pour améliorer votre expérience utilisateur.",
+        // text for accept button
+        button: "D'accord",
+        // primary color
+        theme: '#e2eae1',
+        // expire in 24 hours
+        expire: 24,
+    });
+    </script>
     
 
 </body>
