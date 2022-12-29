@@ -57,7 +57,9 @@ document.addEventListener('DOMContentLoaded', () => {
 
 //ScrollTrigger Animation
 
-/*var sections = gsap.utils.toArray('.projetCell, #facts, #catProjet, #FAQ, #contactSection, #detailsProjet');
+
+
+var sections = gsap.utils.toArray("#facts, #catProjet, #FAQ, #contactSection, #detailsProjet");
 
 sections.forEach((section) => {
   
@@ -71,7 +73,7 @@ sections.forEach((section) => {
     }
 });
   
-})*/
+})
 
 
 
@@ -96,13 +98,6 @@ gsap.from(".RL2", { x: 300, duration: 2});
 
 
 
-//Cookie Banner
-/*const cookieButton = document.querySelector("#cookieButton");
-const cookieBanner = document.querySelector("#cookieBanner");
-
-cookieButton.addEventListener("click", () => gsap.set(cookieBanner, { autoAlpha: 0, duration: 2}));
-
-gsap.from("#cookieBanner", { y: 400, duration: 0.5});*/
 
 // Accordion FAQ
 
@@ -124,17 +119,4 @@ for (i = 0; i < acc.length; i++) {
 
 
 
-
-//Caroussel FLickity
-
-var flkty = new Flickity( '.gallery-cell', {
-  imagesLoaded: true,
-  percentPosition: false
-});
-
-var caption = document.querySelector('#caption');
-
-flkty.on( 'select', function() {
-  caption.textContent = flkty.selectedElement.alt;
-});
 
