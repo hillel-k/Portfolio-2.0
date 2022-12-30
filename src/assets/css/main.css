@@ -570,13 +570,13 @@ textarea {
 }
 
 .gridMansory {
-  overflow: hidden;
+
 }
 
 .grid-item {
   width: 100%;
   display: block;
-  height: auto;
+  height: 100%;
 }
 
 .grid-item video, .grid-item img {
