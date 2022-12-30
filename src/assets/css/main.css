@@ -569,3 +569,16 @@ textarea {
   background-color: #3b683e!important;
 }
 
+.gridMansory {
+  overflow: hidden;
+}
+
+.grid-item {
+  width: 100%;
+  display: block;
+  height: auto;
+}
+
+.grid-item video, .grid-item img {
+  border-radius: 10px;
+}

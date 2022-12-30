@@ -1,0 +1,62 @@
+---
+layout: default
+title: Le Lab
+permalink: lab.html
+
+---
+<section class="m max-w-5xl mx-auto mt-11 mb-12">
+    <div>
+        <p class="mb-2">Experimentations</p>
+        <h1 class=" text-portfolio-vert">Le Lab</h1>
+    </div>
+</section>
+
+<section class=" max-w-5xl mx-auto mb-11">
+
+    <div class="gridMansory">
+
+
+            <figure class="grid-item">
+                <video width="auto" height="auto" loop autoplay muted>
+                    <source src="/assets/img/lab/2023.mp4" type="video/mp4">
+                    Your browser does not support the video tag.
+                </video>
+            </figure>
+    
+            <figure class="grid-item">
+                <video width="auto" height="auto" loop autoplay muted>
+                    <source src="/assets/img/lab/GrowthEnergie.mp4" type="video/mp4">
+                    Your browser does not support the video tag.
+                </video>
+                <figcaption>Création de visuels 3D</figcaption>
+            </figure>
+
+                <figure class="grid-item">
+                    <img src="/assets/img/lab/cosmo.jpg" height="600px" alt="" srcset="">
+                    <figcaption>Modélisation & rendu 3D</figcaption>
+                </figure>
+
+                <figure class="grid-item">
+                    <video width="auto" height="auto" loop autoplay muted>
+                        <source src="/assets/img/lab/flip19.5.mp4" type="video/mp4">
+                        Your browser does not support the video tag.
+                    </video>
+                    <figcaption>Test simulation liquide</figcaption>
+                </figure>
+
+
+
+    </div>
+
+</section>
+
+<script src="https://cdnjs.cloudflare.com/ajax/libs/macy/2.5.1/macy.min.js"></script>
+
+<script>
+var macyInstance = Macy({
+    container: ".gridMansory",
+    columns: 3,
+    margin : 10
+
+});
+</script>

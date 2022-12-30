@@ -13,79 +13,22 @@ tags:
 Créée en 1966, Vital est une société d'import/export de denrées alimentaires basée à Vitrolles. La société m'a sollicité pour créer un catalogue destiné à ses clients, contenant l'intégralité de leurs offres de conserves et autres produits.
 
 
-<figure>
-  <video width="100%" height="auto" loop autoplay muted>
-      <source src="/projets/img/airking/heroVideo.mp4" type="video/mp4">
-      Your browser does not support the video tag.
-  </video>
-  <figcaption>Animation 3D - Section Hero</figcaption>
-</figure>
+  <figure>
+    <img class="rounded" src="/projets/img/vital/frontCoverCement.jpg" alt="couverture catalogue"/>
+    <figcaption>Couverture Catalogue Globale</figcaption> 
+  </figure>
 
+Le catalogue doit être à la fois agréable à lire et efficace pour la vente. Il est important que les lecteurs puissent facilement trouver les informations nécessaires pour passer commande. C'est pourquoi nous avons fait l'inventaire de plusieurs supports précédemment utilisés et avons créé un catalogue général en les combinant de manière cohérente
 
-<div class="split">
-  <figure >
-    <video height="auto" width="100%" loop autoplay muted>
-        <source src="/projets/img/airking/AnimLogo3D.mp4" type="video/mp4">
-        Your browser does not support the video tag.
-    </video>
-    <figcaption>Conception et Modélisation du logo en 3D</figcaption>
+  <figure>
+    <img class="rounded" src="/projets/img/vital/OpenFruitsCement.jpg" alt="page fruit catalogue"/>
+    <figcaption>Page Fruits Catalogue Globale</figcaption> 
   </figure>
 
   <figure>
-    <video height="auto" width="100%" loop autoplay muted>
-        <source src="/projets/img/airking/AnimLogoFlat.mp4" type="video/mp4">
-        Your browser does not support the video tag.
-    </video>
-    <figcaption>Animation 2D de l'introduction du site</figcaption>
-  </figure>
-</div>
-
-
-Pour répondre aux besoins de cette clientèle, j'ai créé des visuels inspirés par des éléments qui jouent sur la frontière entre réalité et virtualité. J'ai utilisé des objets détournés par le choix des matériaux et leurs actions, ajoutant une touche de surréalisme pour donner un aspect unique et original à mes créations.
-
-
-<figure>
-  <video width="100%" height="auto" loop autoplay muted>
-      <source src="/projets/img/airking/main.mp4" type="video/mp4">
-      Your browser does not support the video tag.
-  </video>
-  <figcaption>Animation d'un rig de Main</figcaption>
-</figure>
-
-
-Mon objectif était de créer des contenus qui s'intègrent parfaitement dans le monde de la Web 3.0 et de la crypto monnaie, tout en proposant une esthétique innovante et originale.
-
-<div class="split">
-  <figure >
-    <video height="auto" width="100%" loop autoplay muted>
-        <source src="/projets/img/airking/loopRing.webm" type="video/mp4">
-        Your browser does not support the video tag.
-    </video>
-    <figcaption>Animation 3D - Section Hero</figcaption>
+    <img class="rounded" src="/projets/img/vital/OpenLegumesCement.jpg" alt="page legumes catalogue"/>
+    <figcaption>Page Légumes Catalogue Globale</figcaption> 
   </figure>
 
-  <figure>
-    <video height="auto" width="100%" loop autoplay muted>
-        <source src="/projets/img/airking/busteGlitch.mp4" type="video/mp4">
-        Your browser does not support the video tag.
-    </video>
-    <figcaption>Animation 3D - Section Hero</figcaption>
-  </figure>
-</div>
 
-
-
-
-<div class="split">
-
-  <figure>
-    <img class="rounded" src="/projets/img/airKing/Objets1.jpg" alt="création 3d d'objets casque vr"/>
-    <figcaption>Modélisation 3D</figcaption> 
-  </figure>
-
-  <figure>
-    <img class="rounded" src="/projets/img/airKing/Objets2.jpg" alt="création d'objets en 3d"/>
-    <figcaption>Éclairage et Texture 3D</figcaption> 
-  </figure>
-  
-</div>
+Nous poursuivons actuellement notre colaboration avec la création d'un teaser video de la société en 3D.
