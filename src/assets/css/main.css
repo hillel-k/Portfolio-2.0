@@ -190,6 +190,10 @@ p{
   overflow: hidden;
 }
 
+#hero span {
+  font-family: rufina-stencil, sans-serif;
+}
+
 #heroVideo {
     z-index: 5;
     position: absolute;

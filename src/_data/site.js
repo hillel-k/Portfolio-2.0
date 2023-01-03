@@ -1,6 +1,6 @@
 module.exports = {
   title: 'Hillel K.',
-  description: 'Portfolio 2022',
+  description: 'Portfolio 2023',
   keywords: ['graphiste', 'Marseille', 'site vitrine', '3D'],
   // your site url without trailing slash
   url: 'https://hillel-khiat.com',
