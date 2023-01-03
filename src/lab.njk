@@ -1,70 +1,104 @@
 ---
 layout: default
-title: Le Lab
-permalink: lab.html
-
+title: Le Laboratoire
 ---
-<section class="m max-w-5xl mx-auto mt-11 mb-12">
-    <div>
-        <p class="mb-2">Experimentations</p>
-        <h1 class=" text-portfolio-vert">Le Lab</h1>
-    </div>
+
+<section class="m max-w-5xl mx-auto mt-11 mb-12 px-5">
+  <div>
+    <p class="mb-2">Experimentations</p>
+    <h1 class="text-portfolio-vert">Le Laboratoire</h1>
+  </div>
 </section>
 
-<section class=" w-11/12 sm:max-w-5xl mx-auto mb-11">
+<section class="max-w-5xl mx-auto px-5">
+  <div id="gridMansory">
 
-    <div class="gridMansory">
+    <figure class="grid-item">
+      <video width="auto" height="auto" loop autoplay muted>
+        <source src="/assets/img/lab/2023.mp4" type="video/mp4" />
+        Your browser does not support the video tag.
+      </video>
+      <figcaption>Bonne Année 2023 !</figcaption>
+    </figure>
 
+    <figure class="grid-item">
+        <img src="/assets/img/lab/miel.jpg" height="auto" alt="" srcset="" />
+        <figcaption>Simulation Miel</figcaption>
+      </figure>
 
-            <figure class="grid-item">
-                <video width="auto" height="auto" loop autoplay muted>
-                    <source src="/assets/img/lab/2023.mp4" type="video/mp4">
-                    Your browser does not support the video tag.
-                </video>
-            </figure>
-    
-            <figure class="grid-item">
-                <video width="auto" height="auto" loop autoplay muted>
-                    <source src="/assets/img/lab/GrowthEnergie.mp4" type="video/mp4">
-                    Your browser does not support the video tag.
-                </video>
-                <figcaption>Création de visuels 3D</figcaption>
-            </figure>
+    <figure class="grid-item">
+      <video width="auto" height="auto" loop autoplay muted>
+        <source src="/assets/img/lab/GrowthEnergie.mp4" type="video/mp4" />
+        Your browser does not support the video tag.
+      </video>
+      <figcaption>Graphique 3D</figcaption>
+    </figure>
 
-                <figure class="grid-item">
-                    <img src="/assets/img/lab/cosmo.jpg" height="auto" alt="" srcset="">
-                    <figcaption>Modélisation & rendu 3D</figcaption>
-                </figure>
+    <figure class="grid-item">
+      <img src="/assets/img/lab/cosmo.jpg" height="auto" alt="" srcset="" />
+      <figcaption>Nested Dielectrics</figcaption>
+    </figure>
 
-                <figure class="grid-item">
-                    <video width="auto" height="auto" loop autoplay muted>
-                        <source src="/assets/img/lab/flip19.5.mp4" type="video/mp4">
-                        Your browser does not support the video tag.
-                    </video>
-                    <figcaption>Test simulation liquide</figcaption>
-                </figure>
+    <figure class="grid-item">
+      <video width="auto" height="" loop autoplay muted>
+        <source src="/assets/img/lab/flip19.5.mp4" type="video/mp4" />
+        Your browser does not support the video tag.
+      </video>
+      <figcaption>Test simulation liquide</figcaption>
+    </figure>
 
+    <figure class="grid-item">
+      <video width="auto" height="auto" loop autoplay muted>
+        <source src="/assets/img/lab/meduseHoudini.mp4" type="video/mp4" />
+        Your browser does not support the video tag.
+      </video>
+      <figcaption>Simulation Meduse</figcaption>
+    </figure>
 
+      <figure class="grid-item">
+        <img src="/assets/img/lab/plasticWrap.jpg" height="auto" alt="" srcset="" />
+        <figcaption>Plastic Shop</figcaption>
+      </figure>
 
-    </div>
+      <figure class="grid-item">
+        <img src="/assets/img/lab/vaseVellum.jpg" height="auto" alt="" srcset="" />
+        <figcaption>Initiation à Vellum</figcaption>
+      </figure>
+  
 
+  </div>
 </section>
 
-<script src="https://cdnjs.cloudflare.com/ajax/libs/macy/2.5.1/macy.min.js"></script>
+<section id="CTAProjets">
+    <a class="text-center " href="/projets">
+        <p>Séléction de projet depuis 2019</p>
+        <div class="divider bg-white mx-auto my-3"></div>
+        <h2>Découvrir les projets</h2>
+    </a>
+</section>
+
+<script src="https://cdn.jsdelivr.net/npm/macy@2.5.1/dist/macy.js"></script>
 
 <script>
-var macyInstance = Macy({
-    container: ".gridMansory",
-    columns: 3,
-    margin : 10,
-    trueOrder: false,
-    waitForImages: true,
-    breakAt: {
-    760: {
-      columns: 1,
-      margin: 10,
-    }
-  }
-});
-macyInstance.recalculate();
+var macyInstance = Macy.init({
+        container: '#gridMansory',
+        trueOrder: false,
+        waitForImages: true,
+        debug: true,
+        margin: 10,
+        columns: 3,
+        breakAt: {
+            1200: 3,
+            940: 2,
+            520: 1
+        }
+    });
+
+    macyInstance.runOnImageLoad(function () {
+            macyInstance.recalculate(true, true);
+            var evt = document.createEvent('UIEvents'); 
+            evt.initUIEvent('resize', true, false, window, 0); 
+            window.dispatchEvent(evt);
+    }, true);
+    
 </script>

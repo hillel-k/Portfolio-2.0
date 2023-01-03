@@ -121,7 +121,7 @@ keywords: graphiste, portfolio, marseille, 3D, site vitrine
 <section id="selectionProjets">
   <div>
     <div
-      class="flex m-0-auto max-w-6xl align-middle items-center justify-center relative"
+      class="flex mx-auto max-w-6xl align-middle items-center justify-center relative"
     >
       <img
         src="assets/img/yeux.svg"
@@ -130,7 +130,7 @@ keywords: graphiste, portfolio, marseille, 3D, site vitrine
       />
 
       <div
-        class="main-gallery w-full my-3" 
+        class="main-gallery w-full my-3"
         data-flickity='{"contain" : "true", "wrapAround": "true", "pageDots": "false" }'
       >
         <div class="gallery-cell">
@@ -139,7 +139,9 @@ keywords: graphiste, portfolio, marseille, 3D, site vitrine
             style="
               background-image: url(/projets/img/airking/coverAirking.jpg);
               background-color: rgb(0 0 0 / 19%);
-              border-radius: 10px;">
+              border-radius: 10px;
+            "
+          >
             <a href="/airking">
               <div class="text-white">
                 <p class="italic text-center mb-3 text-3xl">2022</p>
@@ -184,7 +186,6 @@ keywords: graphiste, portfolio, marseille, 3D, site vitrine
     </div>
   </div>
 </section>
-
 
 <!--
 <section class="" id="catProjet">
@@ -286,7 +287,39 @@ keywords: graphiste, portfolio, marseille, 3D, site vitrine
     </div>
   </div>
 </section>
-.
+
+<section
+  id="labCTA"
+  class="relative bg-portfolio-vertLg w-11/12 sm:w-4/5 max-w-6xl mx-auto border-portfolio-vert border flex flex-col items-center justify-center rounded-lg my-44 py-20 
+  text-center text-portfolio-vert" style="background: url(../assets/img/dotPattern.png) center 12rem, #e2eae1;">
+  <a href="/lab">
+    <img
+      src="assets/img/StickerCollage01.svg"
+      alt=""
+      srcset=""
+      width="85rem"
+      class="absolute -left-7 -top-4"
+    />
+    <p class="mb-2">Expériences HTML & 3D</p>
+    <h2>Le Laboratoire</h2>
+
+    <img
+    src="assets/img/stickerCollageYesNo.svg"
+    alt=""
+    srcset=""
+    width="80rem"
+    class="absolute -right-7"
+  />
+
+  <img
+  src="assets/img/stickerCollage02.svg"
+  alt=""
+  srcset=""
+  width="120rem"
+  class="absolute right-8 -top-10"
+/>
+  </a>
+</section>
 
 <section class="w-11/12 sm:w-4/5 mx-auto my-12" id="faq">
   <div class="row">
@@ -413,14 +446,13 @@ keywords: graphiste, portfolio, marseille, 3D, site vitrine
 </section>
 
 <script src="https://cdnjs.cloudflare.com/ajax/libs/flickity/2.3.0/flickity.pkgd.min.js"></script>
+<script src="https://unpkg.com/@lottiefiles/lottie-player@latest/dist/lottie-player.js"></script>
 <script>
-  
-//Caroussel FLickity
+  //Caroussel FLickity
 
-var flkty = new Flickity( '.gallery-cell', {
-  percentPosition: false
-});
-
+  var flkty = new Flickity(".gallery-cell", {
+    percentPosition: false,
+  });
 </script>
 
 <script>
