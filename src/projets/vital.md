@@ -7,6 +7,7 @@ thumb: coverVital.jpg
 tags:
   - 3D 
   - Site Internet
+  - Print
 ---
 
 ## Démarche créative

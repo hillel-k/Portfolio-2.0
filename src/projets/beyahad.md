@@ -7,7 +7,7 @@ thumb: beyahad-mockup.jpg
 annee: 2020
 tags:
   - Identité Visuelle
-  - Site internet
+  - Site Internet
 ---
 
 ## Démarche Créative 
