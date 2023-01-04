@@ -19,25 +19,17 @@ keywords: graphiste, portfolio, marseille, 3D, site vitrine
 <section id="hero">
   <div class="flex h-screen flex-col items-center">
     <div id="lottieHero">
-      <lottie-player
-        src="/assets/img/traceHero.json"
-        background="transparent"
-        speed=".8"
-        style="width: 100vw; height: 100vh"
-        loop
-        autoplay
-      ></lottie-player>
+      <lottie-player src="/assets/img/traceHero.json" background="transparent" speed=".8"
+        style="width: 100vw; height: 100vh" loop autoplay></lottie-player>
     </div>
 
     <div class="w-full h-5/6 flex items-center justify-center flex-col">
-      <p
-        class="border border-portfolio-vert text-portfolio-vert rounded-full py-1 px-2 mb-10 text-xs"
-      >
+      <p class="border border-portfolio-vert text-portfolio-vert rounded-full py-1 px-2 mb-10 text-xs">
         2023
       </p>
-      <h1 class="text-portfolio-vert pt-6 ml-40 textIntro RL">Création</h1>
-      <span class="text-portfolio-vert mr-72 textIntro LR">Visuelle</span>
-      <span class="text-portfolio-vert textIntro RL2">Digitale</span>
+      <h1 class="text-portfolio-vert pt-6 ml-12 sm:ml-40 textIntro RL">Création</h1>
+      <span class="text-portfolio-vert mr-32 sm:mr-72 textIntro LR">Visuelle</span>
+      <span class="text-portfolio-vert textIntro ml-10 sm:ml-0 RL2">Digitale</span>
 
       <div id="heroVideo">
         <video autoplay loop muted playsinline preload="auto" id="teteVideo">
@@ -57,56 +49,40 @@ keywords: graphiste, portfolio, marseille, 3D, site vitrine
   </div>
 </section>
 
-<section id="facts">
-  <div class="inline-block md:w-4/6 w-full rounded-md drop-shadow-sm">
-    <div class="parent">
-      <div class="div1">
-        <img src="assets/img/iconWeb.svg" class="w-14" alt="" />
-        <h2 class="text-2xl">
-          Posséder une présence en ligne n’est plus une option
-        </h2>
-        <p>
-          Vous ne pouvez pas vous permettre de manquer l'opportunité de vous
-          faire connaître en ligne ! 78% des internautes font des recherches sur
-          les lieux avant de s'y rendre, et 81% achètent en ligne. Si vous
-          n'êtes pas en ligne, vous manquez une occasion en or de vous faire
-          connaître auprès de potentiels clients.
-        </p>
+<section class="max-w-6xl m-0-auto ">
+  <div class=" p-12">
+    <div class="text-center mb-5 triggerSection">
+      <p>Pour votre projet</p>
+      <h2 class="text-3xl">Je peux vous aider à..</h2>
+    </div>
+    <div class="flex flex-wrap justify-center flex-col text-center gap-4 sm:flex-row triggerSection">
+      <div class="p-4 py-12 my-4 bg-white rounded shadow-lg flex-1 border border-portfolio-vert">
+        <img src="/assets/img/iconSparkles.svg" class="w-20 pb-4 m-0-auto" alt="etoiles sticker">
+        <p class="rufina text-xl font-bold">Créez votre logo</p>
+        <p class="font-medium mb-5 ">Pour lancer votre nouveau projet</p>
+        <p>Un logo est essentiel pour une entreprise car il représente son l'identité visuelle.
+          Il permet de se démarquer de la concurrence et de faciliter la reconnaissance de la marque
+          par les clients.</p>
       </div>
-      <div class="div2">
-        <img src="assets/img/iconVoid.svg" class="w-14" alt="" />
-        <h2 class="text-2xl my-4">Faite évoluer votre image de marque</h2>
-        <p>
-          Donnez un coup de boost à votre notoriété en ligne en mettant en
-          valeur votre marque avec des designs époustouflants. Faites le lien
-          entre votre entreprise et vos clients en créant une connexion plus
-          forte et durable.
-        </p>
+      <div class="p-4 py-12 my-4 bg-white rounded shadow-lg flex-1 border border-portfolio-vert triggerSection">
+        <img src="/assets/img/iconWeb.svg" class="w-20 pb-4 m-0-auto" alt="site en sticker">
+        <p class="rufina text-xl font-bold">Concevoir votre site</p>
+        <p class="font-medium mb-5"> Votre commercial 24/7</p>
+        <p>Un site internet est un outil de communication incontournable pour une entreprise. Il permet de présenter ses
+          produits ou services,
+          d'échanger avec sa clientèle et de développer sa visibilité sur internet.</p>
       </div>
-      <div class="div3">
-        <img src="assets/img/iconSearch.svg" class="w-14" alt="" />
-        <h2 class="text-2xl my-4">Un processus sur-mesure</h2>
-        <p>
-          Pour votre projet, nous allons d'abord définir des objectifs clairs.
-          Ensuite, je vous proposerai des concepts originaux et percutants pour
-          vous démarquer de manière créative de la concurrence. Nous
-          travaillerons ensemble pour affiner votre projet et créer une solution
-          sur mesure qui réponde parfaitement à vos besoins
-        </p>
-      </div>
-      <div class="div4">
-        <img src="assets/img/iconSparkles.svg" class="w-14" alt="" />
-        <h2 class="text-2xl my-4">Du travail de qualité</h2>
-        <p>
-          Je suis passionné par mon métier et je mets tout mon savoir-faire et
-          ma créativité à votre disposition pour vous aider à atteindre vos
-          objectifs. Je suis convaincu que la qualité et l'attention au détail
-          sont des éléments clés pour vous offrir une satisfaction optimale et
-          pour vous aider à réussir.
-        </p>
+      <div class="p-4 py-12 my-4 bg-white rounded shadow-lg flex-1 border border-portfolio-vert hover:-translate-x-1 triggerSection">
+        <img src="/assets/img/iconVoid.svg" class="w-20 pb-4 m-0-auto" alt="plume en sticker">
+        <p class="rufina text-xl font-bold">Rafraîchir votre marque</p>
+        <p class="font-medium mb-5">Ajuster votre communication</p>
+        <p>Une refonte d'identité visuelle permet de moderniser l'image de l'entreprise et de se démarquer de la
+          concurrence. Elle peut également être utilisée
+          pour adapter l'identité de l'entreprise à de nouveaux objectifs ou cibles de marché.</p>
       </div>
     </div>
   </div>
+
   <div id="videoAmpoule">
     <img src="assets/img/Ampoule.png" alt="" class="w-40 sm:w-60" />
   </div>
@@ -121,28 +97,17 @@ keywords: graphiste, portfolio, marseille, 3D, site vitrine
 
 <section id="selectionProjets">
   <div>
-    <div
-      class="flex mx-auto max-w-6xl align-middle items-center justify-center relative"
-    >
-      <img
-        src="assets/img/yeux.svg"
-        alt=""
-        class="absolute right-0 top-6 overflow-hidden z-10 w-10 md:w-20"
-      />
+    <div class="triggerSection flex mx-auto max-w-6xl align-middle items-center justify-center relative">
+      <img src="assets/img/yeux.svg" alt="" class="absolute right-0 top-6 overflow-hidden z-10 w-10 md:w-20" />
 
-      <div
-        class="main-gallery w-full my-3"
-        data-flickity='{"contain" : "true", "wrapAround": "true", "pageDots": "false" }'
-      >
+      <div class="main-gallery w-full my-3"
+        data-flickity='{"contain" : "true", "wrapAround": "true", "pageDots": "false" }'>
         <div class="gallery-cell">
-          <div
-            class="flex w-full h-full bg-cover bg-center justify-center items-center bg-blend-multiply"
-            style="
+          <div class="flex w-full h-full bg-cover bg-center justify-center items-center bg-blend-multiply" style="
               background-image: url(/projets/img/airking/coverAirking.jpg);
               background-color: rgb(0 0 0 / 19%);
               border-radius: 10px;
-            "
-          >
+            ">
             <a href="/airking">
               <div class="text-white">
                 <p class="italic text-center mb-3 text-3xl">2022</p>
@@ -151,14 +116,11 @@ keywords: graphiste, portfolio, marseille, 3D, site vitrine
             </a>
           </div>
 
-          <div
-            class="flex w-full h-full bg-cover bg-center justify-center items-center bg-blend-multiply"
-            style="
+          <div class="flex w-full h-full bg-cover bg-center justify-center items-center bg-blend-multiply" style="
               background-image: url(projets/img/ophtaline/coverOphtaline.jpg);
               background-color: rgb(0 0 0 / 19%);
               border-radius: 10px;
-            "
-          >
+            ">
             <a href="/ophtaline">
               <div class="text-white">
                 <p class="italic text-center mb-3 text-3xl">2019</p>
@@ -167,14 +129,11 @@ keywords: graphiste, portfolio, marseille, 3D, site vitrine
             </a>
           </div>
 
-          <div
-            class="flex w-full h-full bg-cover bg-center justify-center items-center bg-blend-multiply"
-            style="
+          <div class="flex w-full h-full bg-cover bg-center justify-center items-center bg-blend-multiply" style="
               background-image: url(projets/img/tourCampanet/coverTourCampanet.jpg);
               background-color: rgb(0 0 0 / 19%);
               border-radius: 10px;
-            "
-          >
+            ">
             <a href="/tour-campanet">
               <div class="text-white">
                 <p class="italic text-center mb-3 text-3xl">2021</p>
@@ -189,63 +148,58 @@ keywords: graphiste, portfolio, marseille, 3D, site vitrine
 </section>
 
 
-<section class="max-w-5xl w-4/5 mx-auto" id="catProjet">
-    <div class="w-0-auto my-12 flex justify-center">
-        <h2>Découvrez les projets par catégorie</h2>
+<section class="max-w-5xl w-4/5 mx-auto " id="catProjet">
+  <div class="w-0-auto my-12 flex justify-center triggerSection">
+    <h2>Découvrez les projets par catégorie</h2>
+  </div>
+
+  <div class="grilleService">
+
+    <div class="serviceDiv1 serviceCell rounded-sm triggerSection">
+      <a href="/tags/Identité%20Visuelle/">
+        <p class="servicePill">Identité Visuelle</p>
+        <img src="/projets\img\avocat\Logo Avocat.svg" class="m-12 mb-8" style="margin-bottom: 1.5rem!important;"
+          alt="">
+      </a>
     </div>
 
-    <div class="grilleService">
-
-        <div class="serviceDiv1 serviceCell rounded-sm">
-            <a href="/tags/Identité%20Visuelle/">
-                <p class="servicePill">Identité Visuelle</p>
-                <img src="/projets\img\avocat\Logo Avocat.svg" class="m-12 mb-8" style="margin-bottom: 1.5rem!important;" alt="">
-            </a>
-        </div>
-
-        <div class="serviceDiv2 serviceCell transition-colors rounded-sm">
-            <a href="/tags/3D/">
-                <p class="servicePill">3D</p>
-                <img src="assets/img/3DService.png" class="mx-6 m-0-auto" alt="création site web" />
-            </a>
-        </div>
-
-        <div class="serviceDiv3 serviceCell transition-colors">
-            <a href="/tags/Packaging/">
-                <p class="servicePill">Packaging</p>
-                <img src="assets/img/packagingService.png" class="mx-6 m-0-auto" alt="création site web" />
-            </a>
-        </div>
-
-        <div class="serviceDiv4 serviceCell transition-colors">
-            <a href="/tags/print/">
-                <p class="servicePill">Catalogue</p>
-                <img src="assets/img/catalogueService.png" class="mx-6 m-0-auto" alt="création site web" />
-            </a>
-        </div>
-
-        <div class="serviceDiv5 serviceCell transition-colors">
-            <a href="/tags/Site%20Internet/">
-                <p class="servicePill">Site Internet</p>
-                <img src="assets/img/siteWebService.jpg" class="mx-6 m-0-auto" alt="création site web" />
-            </a>
-        </div>
-
-
+    <div class="serviceDiv2 serviceCell transition-colors rounded-sm triggerSection">
+      <a href="/tags/3D/">
+        <p class="servicePill">3D</p>
+        <img src="assets/img/3DService.png" class="mx-6 m-0-auto" alt="création site web" />
+      </a>
     </div>
+
+    <div class="serviceDiv3 serviceCell transition-colors triggerSection">
+      <a href="/tags/Packaging/">
+        <p class="servicePill">Packaging</p>
+        <img src="assets/img/packagingService.png" class="mx-6 m-0-auto" alt="création site web" />
+      </a>
+    </div>
+
+    <div class="serviceDiv4 serviceCell transition-colors triggerSection">
+      <a href="/tags/print/">
+        <p class="servicePill">Catalogue</p>
+        <img src="assets/img/catalogueService.png" class="mx-6 m-0-auto" alt="création site web" />
+      </a>
+    </div>
+
+    <div class="serviceDiv5 serviceCell transition-colors triggerSection">
+      <a href="/tags/Site%20Internet/">
+        <p class="servicePill">Site Internet</p>
+        <img src="assets/img/siteWebService.jpg" class="mx-6 m-0-auto" alt="création site web" />
+      </a>
+    </div>
+
+
+  </div>
 
 </section>
 
 <section id="avis max-w-xl">
-  <div class="max-w-3xl mx-auto">
+  <div class="max-w-3xl mx-auto triggerSection">
     <div class="avisWrapper max-w-xl text-center relative">
-      <img
-        src="/assets/img/siteArchitecte.jpg"
-        alt=""
-        srcset=""
-        width="50%"
-        class="imgAvis shadow-md rounded-md"
-      />
+      <img src="/assets/img/siteArchitecte.jpg" alt="" srcset="" width="50%" class="imgAvis shadow-md rounded-md" />
       <p class="mb-2 mt-10">
         Excellente expérience ! Hillel a su répondre à mes demandes de façon
         efficaces et très professionnelle. Il m'a proposé divers éléments pour
@@ -253,23 +207,11 @@ keywords: graphiste, portfolio, marseille, 3D, site vitrine
         peux que le recommander !
       </p>
       <span class="italic font-semibold">Thibaut Picard Architecte</span>
-      <img
-        src="/assets/img/avis.svg"
-        alt=""
-        srcset=""
-        class="mx-auto"
-        width="15%"
-      />
+      <img src="/assets/img/avis.svg" alt="" srcset="" class="mx-auto" width="15%" />
     </div>
 
-    <div class="avisWrapper max-w-xl text-center relative ml-auto">
-      <img
-        src="/assets/img/siteThe.jpg"
-        alt=""
-        srcset=""
-        width="50%"
-        class="imgAvis shadow-md rounded-md"
-      />
+    <div class=" triggerSection avisWrapper max-w-xl text-center relative ml-auto">
+      <img src="/assets/img/siteThe.jpg" alt="" srcset="" width="50%" class="imgAvis shadow-md rounded-md" />
       <p class="mb-2 mt-10">
         Je suis absolument ravi de la prestation que j'ai reçue de la part de
         Hillel. Il a su répondre à toutes mes questions avec rapidité et
@@ -278,57 +220,29 @@ keywords: graphiste, portfolio, marseille, 3D, site vitrine
       </p>
       <span class="italic font-semibold">Dan M.</span>
       <span>Evershape</span>
-      <img
-        src="/assets/img/avis.svg"
-        alt=""
-        srcset=""
-        class="mx-auto"
-        width="15%"
-      />
+      <img src="/assets/img/avis.svg" alt="" srcset="" class="mx-auto" width="15%" />
     </div>
   </div>
 </section>
 
-<section
-  id="labCTA"
-  class="relative bg-portfolio-vertLg w-11/12 sm:w-4/5 max-w-6xl mx-auto border-portfolio-vert border flex flex-col items-center justify-center rounded-lg my-44 py-20 
+<section id="labCTA" class="triggerSection relative bg-portfolio-vertLg w-11/12 sm:w-4/5 max-w-6xl mx-auto border-portfolio-vert border flex flex-col items-center justify-center rounded-lg my-44 py-20 
   text-center text-portfolio-vert" style="background: url(../assets/img/dotPattern.png) center 12rem, #e2eae1;">
   <a href="/lab">
-    <img
-      src="assets/img/StickerCollage01.svg"
-      alt=""
-      srcset=""
-      width="85rem"
-      class="absolute -left-7 -top-4"
-    />
+    <img src="assets/img/StickerCollage01.svg" alt="" srcset="" width="85rem" class="absolute -left-7 -top-4" />
     <p class="mb-2">Expériences HTML & 3D</p>
     <h2>Le Laboratoire</h2>
 
-    <img
-    src="assets/img/stickerCollageYesNo.svg"
-    alt=""
-    srcset=""
-    width="80rem"
-    class="absolute -right-7"
-  />
+    <img src="assets/img/stickerCollageYesNo.svg" alt="" srcset="" width="80rem" class="absolute -right-7" />
 
-  <img
-  src="assets/img/stickerCollage02.svg"
-  alt=""
-  srcset=""
-  width="120rem"
-  class="absolute right-8 -top-10"
-/>
+    <img src="assets/img/stickerCollage02.svg" alt="" srcset="" width="120rem" class="absolute right-8 -top-10" />
   </a>
 </section>
 
 <section class="w-11/12 sm:w-4/5 mx-auto my-12" id="faq">
   <div class="row">
     <div class="col">
-      <div
-        class="flex flex-col sm:flex-row items-start sm:items-center justify-between mb-12"
-      >
-        <div>
+      <div class="flex flex-col sm:flex-row items-start sm:items-center justify-between mb-12">
+        <div triggerSection>
           <h2 class="text-portfolio-vert">F.A.Q. (Foire aux questions)</h2>
           <p>Des réponses à vos questions</p>
         </div>
@@ -336,7 +250,7 @@ keywords: graphiste, portfolio, marseille, 3D, site vitrine
         <img src="assets/img/yeux.svg" alt="" class="w-20 self-end" />
       </div>
 
-      <button class="accordion">Quels services proposez vous ?</button>
+      <button class="accordion triggerSection">Quels services proposez vous ?</button>
       <div class="panel">
         <div class="my-12">
           <p>
@@ -352,7 +266,7 @@ keywords: graphiste, portfolio, marseille, 3D, site vitrine
         </div>
       </div>
 
-      <button class="accordion">Combien coute un site internet ?</button>
+      <button class="accordion triggerSection">Combien coute un site internet ?</button>
       <div class="panel">
         <div class="my-12">
           <p>
@@ -368,7 +282,7 @@ keywords: graphiste, portfolio, marseille, 3D, site vitrine
         </div>
       </div>
 
-      <button class="accordion">
+      <button class="accordion triggerSection">
         Est-il possible d'estimer la durée de réalisation ?
       </button>
       <div class="panel">
@@ -383,7 +297,7 @@ keywords: graphiste, portfolio, marseille, 3D, site vitrine
         </div>
       </div>
 
-      <button class="accordion">
+      <button class="accordion triggerSection">
         Est-ce que vous proposer des services de maintenance et de mise à jour
         de site web ?
       </button>
@@ -403,10 +317,9 @@ keywords: graphiste, portfolio, marseille, 3D, site vitrine
   </div>
 </section>
 
-<section id="contactSection">
+<section id="contactSection ">
   <div
-    class="contactWrap flex flex-col sm:flex-row justify-between w-11/12 sm:w-4/5 items-center sm:items-start bg-portfolio-vertLg border-portfolio-vert border p-4 py-8 sm:p-12 rounded-xl max-w-6xl"
-  >
+    class=" triggerSection contactWrap flex flex-col sm:flex-row justify-between w-11/12 sm:w-4/5 items-center sm:items-start bg-portfolio-vertLg border-portfolio-vert border p-4 py-8 sm:p-12 rounded-xl max-w-6xl">
     <div class="text-portfolio-vert w-full sm:w-5/12 mb-10 sm:mb-0">
       <img src="assets/img/iconMail.svg" width="32rem" alt="" />
 
@@ -422,24 +335,16 @@ keywords: graphiste, portfolio, marseille, 3D, site vitrine
       </p>
 
       <p class="mt-4"><em>Je suis joignable également en mail</em></p>
-      <a class="underline" href="mailto:contact@hillel-khiat.com"
-        >contact@hillel-khiat.com</a
-      >
+      <a class="underline" href="mailto:contact@hillel-khiat.com">contact@hillel-khiat.com</a>
     </div>
 
     <div>
       <div>
         <!-- Début de widget en ligne Calendly -->
-        <div
-          class="calendly-inline-widget border-8 p-2 sm:w-full bg-white"
+        <div class="calendly-inline-widget border-8 p-2 sm:w-full bg-white"
           data-url="https://calendly.com/hillelk/rendez-vous-telephonique?hide_event_type_details=1&hide_gdpr_banner=1"
-          style="min-width: 45%; height: 38rem"
-        ></div>
-        <script
-          type="text/javascript"
-          src="https://assets.calendly.com/assets/external/widget.js"
-          async
-        ></script>
+          style="min-width: 45%; height: 38rem"></div>
+        <script type="text/javascript" src="https://assets.calendly.com/assets/external/widget.js" async></script>
         <!-- Fin de widget en ligne Calendly -->
       </div>
     </div>

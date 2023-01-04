@@ -2,7 +2,7 @@
 layout: default
 title: À Propos
 ---
-<section class="w-11/12 sm:max-w-6xl mx-auto my-20">
+<section class="w-11/12 sm:max-w-6xl mx-auto my-20 triggerSection">
     <div class="flex flex-col sm:flex-row flex-wrap justify-around items-center">
         <img class="w-11/12 sm:w-2/5" src="/assets\img\portrait.png" width="35%" alt="">
     
@@ -27,42 +27,63 @@ title: À Propos
     </div>
 </section>
 
-<section class="max-w-6xl m-0-auto">
-    <div class="bg-white p-12 rounded border border-portfolio-vert shadow-md">
-        <div class="text-center mb-5">
-            <p>Pour votre projet</p>
-            <h2 class="text-3xl">Je peux vous aider à..</h2>
+
+
+<section id="facts">
+    <div class="inline-block md:w-4/6 w-full rounded-md drop-shadow-sm triggerSection">
+      <div class="parent">
+        <div class="div1">
+          <img src="assets/img/iconWeb.svg" class="w-14" alt="" />
+          <h2 class="text-2xl">
+            Posséder une présence en ligne n’est plus une option
+          </h2>
+          <p>
+            Vous ne pouvez pas vous permettre de manquer l'opportunité de vous
+            faire connaître en ligne ! 78% des internautes font des recherches sur
+            les lieux avant de s'y rendre, et 81% achètent en ligne. Si vous
+            n'êtes pas en ligne, vous manquez une occasion en or de vous faire
+            connaître auprès de potentiels clients.
+          </p>
         </div>
-        <div class="flex flex-wrap justify-center flex-col text-center gap-4 sm:flex-row">
-            <div class="p-4 py-6 my-4 bg-white rounded shadow flex-1 border border-portfolio-vert">
-                <img src="/assets/img/iconSparkles.svg" class="w-20 pb-4 m-0-auto" alt="etoiles sticker">
-                <p class="rufina text-xl font-bold mb-2">Créez votre logo</p>
-                <p class="font-medium">Pour lancer votre nouveau projet, ou le demarrer avec une identité qui vous convient</p>
-                <p>Un logo est essentiel pour une entreprise car il représente l'identité visuelle de celle-ci. 
-                    Il permet de se démarquer de la concurrence et de faciliter la reconnaissance de la marque
-                     par les clients. En résumé, la création d'un logo est une étape cruciale pour la réussite de toute entreprise</p>
-            </div>
-            <div class="p-4 py-6 my-4 bg-white rounded shadow flex-1 border border-portfolio-vert">
-                <img src="/assets/img/iconWeb.svg" class="w-20 pb-4 m-0-auto" alt="site en sticker">
-                <p class="rufina text-xl font-bold mb-2">Concevoir votre site</p>
-                <p class="font-medium"> Votre commercial 24/7</p>
-                <p>Un site internet est un outil de communication incontournable pour une entreprise. Il permet de présenter ses produits ou services,
-                     d'échanger avec sa clientèle et de développer sa visibilité sur internet.
-                     En bref, la création d'un site internet est un investissement essentiel pour toute entreprise souhaitant se développer et réussir sur le long terme.</p>
-            </div>
-            <div class="p-4 py-6 my-4 bg-white rounded shadow flex-1 border border-portfolio-vert hover:-translate-x-1">
-                <img src="/assets/img/iconVoid.svg" class="w-20 pb-4 m-0-auto" alt="plume en sticker">
-                <p class="rufina text-xl font-bold mb-2">Rafraîchir votre marque</p>
-                <p class="font-medium">Besoin d'aligner votre communication avec de nouveaux objectifs ?</p>
-                <p>Une refonte d'identité visuelle permet de moderniser l'image de l'entreprise et de se démarquer de la concurrence. Elle peut également être utilisée 
-                    pour adapter l'identité de l'entreprise à de nouveaux objectifs ou cibles de marché.</p>
-            </div>
+        <div class="div2">
+          <img src="assets/img/iconVoid.svg" class="w-14" alt="" />
+          <h2 class="text-2xl my-4">Faites évoluer votre image de marque</h2>
+          <p>
+            Donnez un coup de boost à votre notoriété en ligne en mettant en
+            valeur votre marque avec des designs époustouflants. Faites le lien
+            entre votre entreprise et vos clients en créant une connexion plus
+            forte et durable.
+          </p>
         </div>
+        <div class="div3">
+          <img src="assets/img/iconSearch.svg" class="w-14" alt="" />
+          <h2 class="text-2xl my-4">Un processus sur-mesure</h2>
+          <p>
+            Pour votre projet, nous allons d'abord définir des objectifs clairs.
+            Ensuite, je vous proposerai des concepts originaux et percutants pour
+            vous démarquer de manière créative de la concurrence. Nous
+            travaillerons ensemble pour affiner votre projet et créer une solution
+            sur mesure qui réponde parfaitement à vos besoins
+          </p>
+        </div>
+        <div class="div4">
+          <img src="assets/img/iconSparkles.svg" class="w-14" alt="" />
+          <h2 class="text-2xl my-4">Du travail de qualité</h2>
+          <p>
+            Je suis passionné par mon métier et je mets tout mon savoir-faire et
+            ma créativité à votre disposition pour vous aider à atteindre vos
+            objectifs. Je suis convaincu que la qualité et l'attention au détail
+            sont des éléments clés pour vous offrir une satisfaction optimale et
+            pour vous aider à réussir.
+          </p>
+        </div>
+      </div>
     </div>
-</section>
+
+  </section>
 
 
-<section class="container max-w-6xl m-0-auto">
+<section class="container max-w-6xl m-0-auto triggerSection">
     <div class="mt-14 bg-portfolio-vert p-12 sm:rounded text-white">
         <div>
             <p>La où la magie opère</p>
@@ -144,7 +165,7 @@ title: À Propos
     </div>
 </section>
 
-<section id="CTAProjets">
+<section id="CTAProjets" class="triggerSection">
     <a class="text-center " href="/projets">
         <p>Séléction de projet depuis 2019</p>
         <div class="divider bg-white mx-auto my-3"></div>

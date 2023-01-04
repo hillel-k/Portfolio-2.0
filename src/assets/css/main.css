@@ -473,6 +473,11 @@ figcaption {
       bottom: 82%;
     }
 
+    .textIntro {
+      font-size: 6rem;
+      line-height: 100%;
+  }
+
  
 }
 .divider {

@@ -57,23 +57,22 @@ document.addEventListener('DOMContentLoaded', () => {
 
 //ScrollTrigger Animation
 
+gsap.registerPlugin(ScrollTrigger);
 
 
-var sections = gsap.utils.toArray("#facts, #catProjet, #FAQ, #contactSection, #detailsProjet");
 
-sections.forEach((section) => {
-  
-  gsap.from(section, { autoAlpha: 0, y:100,
+const sectionsAnim = gsap.utils.toArray('.triggerSection');
+sectionsAnim.forEach(triggerSection => {
+  gsap.from(triggerSection, { 
+    y: 150, autoAlpha:0.1,
     scrollTrigger: {
-        trigger: section,
-        start: 'top',
-        scrub: true,
-        end: '+=500',
-        markers: true
+      trigger: triggerSection,
+      scrub: true,
+      start: "1px 100%",
+      end : "20% 85%"
     }
+  })
 });
-  
-})
 
 
 
@@ -81,20 +80,42 @@ sections.forEach((section) => {
 
 //Animation GSAP 
 
-gsap.registerPlugin(ScrollTrigger);
 
-const preload = gsap.timeline ({delay:0.2});
-preload.to("#preload", {duration: 2, ease: "power4.out", x: "100%" });
-preload.to("#preload2", {duration: 3, ease: "power4.out", x: "100%" },"-=1.8");
-preload.to("#preload", {autoAlpha:0, "display":"none" },"-=1.8")
-preload.to("#preload2", {autoAlpha:0, "display":"none" },"-=1.8")
+const preload = gsap.timeline({ delay: 0.2 });
+preload.to("#preload", { duration: 2, ease: "power4.out", x: "100%" });
+preload.to("#preload2", { duration: 3, ease: "power4.out", x: "100%" }, "-=1.8");
+preload.to("#preload", { autoAlpha: 0, "display": "none" }, "-=1.8")
+preload.to("#preload2", { autoAlpha: 0, "display": "none" }, "-=1.8")
 
 /*let videoElem1 = document.querySelector('#teteVideo');
 videoElem1.play();*/
 
-gsap.from(".RL", { x: 200, duration: 2});
-gsap.from(".LR", { x: -200, duration: 2});
-gsap.from(".RL2", { x: 300, duration: 2});
+let mm = gsap.matchMedia();
+
+// add a media query. When it matches, the associated function will run
+mm.add("(min-width: 800px)", () => {
+
+  // this setup code only runs when viewport is at least 800px wide
+  gsap.from(".RL", { x: 200, duration: 2 });
+  gsap.from(".LR", { x: -200, duration: 2 });
+  gsap.from(".RL2", { x: 300, duration: 2 });
+
+  return () => { // optional
+    // custom cleanup code here (runs when it STOPS matching)
+  };
+});
+
+mm.add("(max-width: 800px)", () => {
+
+  // this setup code only runs when viewport is at least 800px wide
+  gsap.from(".RL", { x: 250, duration: 2 });
+  gsap.from(".LR", { x: -190, duration: 2 });
+  gsap.from(".RL2", { x: 200, duration: 2 });
+
+  return () => { // optional
+    // custom cleanup code here (runs when it STOPS matching)
+  };
+});
 
 
 
@@ -105,14 +126,14 @@ var acc = document.getElementsByClassName("accordion");
 var i;
 
 for (i = 0; i < acc.length; i++) {
-  acc[i].addEventListener("click", function() {
+  acc[i].addEventListener("click", function () {
     this.classList.toggle("active");
     var panel = this.nextElementSibling;
     if (panel.style.maxHeight) {
       panel.style.maxHeight = null;
     } else {
       panel.style.maxHeight = panel.scrollHeight + "px";
-    } 
+    }
   });
 }
 
