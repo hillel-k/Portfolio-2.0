@@ -157,6 +157,7 @@ p{
 }
 
 .prose img {
+  width: 100%;
   margin: 1rem auto 1rem auto;
   border-radius: 10px;
   --tw-shadow: 0 4px 6px -1px rgba(0, 0, 0, 0.1),0 2px 4px -1px rgba(0, 0, 0, 0.06);
