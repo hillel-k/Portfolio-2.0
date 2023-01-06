@@ -258,7 +258,7 @@ figcaption {
 
 #videoAmpoule{
   display: inline-block;
-  width: 29%;
+  width: 100%;
 }
 
 .marquee {
