@@ -478,7 +478,9 @@ figcaption {
       font-size: 6rem;
       line-height: 100%;
   }
-
+  #cookieBar {
+    width: 100%;
+  }
  
 }
 .divider {
@@ -577,6 +579,10 @@ textarea {
 
 #cookieBar .cc-bar-col .cc-bar-btn {
   background-color: #3b683e!important;
+}
+
+#cookieBar {
+  width: 20rem!important;
 }
 
 .gridMansory {
