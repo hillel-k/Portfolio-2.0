@@ -77,7 +77,8 @@
         </div>
     </main>
     {% include "partials/footer.njk" %}
-    <div id="cookieBar"></div>
+
+    <script type="text/javascript" src="https://cdn.jsdelivr.net/npm/cookie-bar/cookiebar-latest.min.js?theme=minimal&tracking=1&thirdparty=1&always=1&scrolling=1"></script>
 
     
 
@@ -91,15 +92,6 @@
     <script src="{{ '/assets/js/bundle.js' | url }}" type="module" class="main-script"></script>
     <script src="/assets/js/transition.js" type="module"></script>
 
-    <script src="/assets/js/cookieBar.js"></script>
-    <script>new cookieBar({
-        selector: "#cookieBar",
-        message: "En poursuivant votre navigation sur ce site, vous acceptez l'utilisation de cookies pour améliorer votre expérience utilisateur.",
-        button: "D'accord",
-        theme: '#e2eae1',
-        expire: 24,
-    });
-    </script>
     
 
 </body>
