@@ -1,25 +1,25 @@
 {%- set metaTitle -%}
-    {%- if not title -%}{{ site.title }} - {{ site.description | safe }}
-    {%- else -%}{{ title | safe }} | {{ site.title }}
-    {%- endif -%}
+{%- if not title -%}{{ site.title }} - {{ site.description | safe }}
+{%- else -%}{{ title | safe }} | {{ site.title }}
+{%- endif -%}
 {%- endset -%}
 {%- set metaDesc -%}
-    {%- if not description -%}{{ site.description | safe }}
-    {%- else -%}{{ description | safe }}
-    {%- endif -%}
+{%- if not description -%}{{ site.description | safe }}
+{%- else -%}{{ description | safe }}
+{%- endif -%}
 {%- endset -%}
 {%- set metaKeywords -%}
-    {%- if tags -%}{%- for tag in tags -%}{{ tag }},{%- endfor -%}{%- endif -%}
-    {%- if tagProjets -%}{%- for tagProjet in tagProjets -%}{{ tagProjet }},{%- endfor -%}{%- endif -%}
-    {%- if site.keywords -%}
-        {%- for keyword in site.keywords -%}
-            {{ keyword }}{%- if not loop.last %},{% endif -%}
-        {%- endfor -%}
-    {%- endif -%}
+{%- if tags -%}{%- for tag in tags -%}{{ tag }},{%- endfor -%}{%- endif -%}
+{%- if tagProjets -%}{%- for tagProjet in tagProjets -%}{{ tagProjet }},{%- endfor -%}{%- endif -%}
+{%- if site.keywords -%}
+{%- for keyword in site.keywords -%}
+{{ keyword }}{%- if not loop.last %},{% endif -%}
+{%- endfor -%}
+{%- endif -%}
 {%- endset -%}
 <!DOCTYPE html>
 <html lang="fr">
-    
+
 <head>
     <meta charset="utf-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
@@ -40,32 +40,43 @@
     <link rel="apple-touch-icon" href="{{ '/assets/img/apple-touch-icon.png' | url }}">
     <link rel="stylesheet" href="https://use.typekit.net/ubf1dfo.css">
     <link rel="stylesheet" href="https://unpkg.com/flickity@2/dist/flickity.min.css">
-    
-    
-<!--    <link rel="dns-prefetch" href="https://fonts.googleapis.com">
+
+
+    <!--    <link rel="dns-prefetch" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="dns-prefetch" href="https://fonts.gstatic.com">
     <link rel="preconnect" href="https://fonts.gstatic.com">
     <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600&display=swap"> !-->
 
     <link rel="stylesheet" href="{{ '/assets/css/main.css' | url }}">
-
+    
+    
     <script type="text/javascript">
         window._mfq = window._mfq || [];
-        (function() {
-          var mf = document.createElement("script");
-          mf.type = "text/javascript"; mf.defer = true;
-          mf.src = "//cdn.mouseflow.com/projects/99cba88d-c078-4e8c-b8cc-69b09c678755.js";
-          document.getElementsByTagName("head")[0].appendChild(mf);
+        (function () {
+            var mf = document.createElement("script");
+            mf.type = "text/javascript"; mf.defer = true;
+            mf.src = "//cdn.mouseflow.com/projects/99cba88d-c078-4e8c-b8cc-69b09c678755.js";
+            document.getElementsByTagName("head")[0].appendChild(mf);
         })();
-      </script>
-</head>	
+    </script>
+
+    <!-- Google tag (gtag.js) -->
+    <script async src="https://www.googletagmanager.com/gtag/js?id=G-TYQKEV79CD"></script>
+    <script>
+        window.dataLayer = window.dataLayer || [];
+        function gtag() { dataLayer.push(arguments); }
+        gtag('js', new Date());
+
+        gtag('config', 'G-TYQKEV79CD');
+    </script>
+</head>
 
 <body class="flex flex-col h-screen text-gray-800 break-words">
     <div class="coverTransition"></div>
-    <div class="coverTransition2"></div> 
+    <div class="coverTransition2"></div>
     {% include "partials/header.njk" %}
-    <main class="mt-2 flex-grow" >
+    <main class="mt-2 flex-grow">
         <div>
             {% if layout === "post" %}
             {{ content | safe }}
@@ -78,9 +89,10 @@
     </main>
     {% include "partials/footer.njk" %}
 
-    <script type="text/javascript" src="https://cdn.jsdelivr.net/npm/cookie-bar/cookiebar-latest.min.js?theme=minimal&tracking=1&thirdparty=1&always=1&scrolling=1"></script>
+    <script type="text/javascript"
+        src="https://cdn.jsdelivr.net/npm/cookie-bar/cookiebar-latest.min.js?theme=minimal&tracking=1&thirdparty=1&always=1&scrolling=1"></script>
 
-    
+
 
 
 
@@ -92,7 +104,7 @@
     <script src="{{ '/assets/js/bundle.js' | url }}" type="module" class="main-script"></script>
     <script src="/assets/js/transition.js" type="module"></script>
 
-    
+
 
 </body>
 
