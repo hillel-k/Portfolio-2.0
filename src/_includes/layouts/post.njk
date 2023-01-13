@@ -3,9 +3,10 @@ layout: default
 ---
 
 <article class="w-11/12 sm:w-full max-w-5xl mx-auto">
-    <header class="mb-14">
-        <h1 class="text-3xl text-center font-bold leading-normal text-gray-900 mt-0 mb-3">{{ title }}</h1>
-        <!-- <div class="text-center">Published on {{ page.date | readableDate }}</div>-->
+    <header class="mb-14 mt-14">
+        <h1 class="text-3xl text-center font-bold leading-normal text-gray-900 mt-0 mb-3 max-w-3xl mx-auto">{{ title }}</h1>
+        <!--<div class="text-center">Publiée on {{ page.date | readableDate }}</div>-->
+        <p class="mx-auto italic text-center">Rédigé par Hillel K.</p>
         {% if tags %}
         <!--<div class="mt-3 text-center">
             {% for tag in tags %}
@@ -14,7 +15,7 @@ layout: default
         </div>-->
         {% endif %}
         {% if thumb %}
-        <div class="mt-10 -mx-7 md:mx-0">
+        <div class="mt-10  md:mx-0">
             <img class="w-full max-w-2xl mx-auto overflow-hidden shadow-md rounded-lg" src="{{ thumb | url }}" width="960" height="500" alt="This post thumbnail">
         </div>
         {% endif %}
