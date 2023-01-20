@@ -18,6 +18,9 @@
         clip-path: inset(1px);
     }
 }
+*{
+  scroll-behavior: smooth;
+}
 body{
     overflow-x: hidden;
     background-color: #e2eae1;
@@ -193,6 +196,7 @@ p{
 
 #hero {
   overflow: hidden;
+  height: 90vh;
 }
 
 #hero span {
@@ -203,7 +207,7 @@ p{
     z-index: 5;
     position: absolute;
     overflow: hidden;
-    bottom: 6rem;
+    bottom: 21rem;
     
 }
 
@@ -427,9 +431,27 @@ figcaption {
   max-width: 72rem;
 }
 
+#cookie-bar {
+  width: 16rem!important;
+  padding: 1rem!important;
+  box-shadow: #9c9c9c2e 1px 1px!important;
+  border-radius: 10px;
+
+}
+
+#cookie-bar-button {
+  margin-top: 1rem!important;
+  margin-bottom: 0.5rem!important;
+  border: solid 1px #3B683E!important;
+}
+
 @media (max-width: 768px) {
   .ninetyVh{
     height: 75vh;
+  }
+
+  #heroVideo {
+    display: none;
   }
 
   .grilleService {

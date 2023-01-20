@@ -98,7 +98,7 @@ mm.add("(min-width: 800px)", () => {
   // this setup code only runs when viewport is at least 800px wide
   gsap.from(".RL", { x: 200, duration: 2 });
   gsap.from(".LR", { x: -200, duration: 2 });
-  gsap.from(".RL2", { x: 300, duration: 2 });
+  gsap.from(".RL2", { x: 200, duration: 2 });
 
   return () => { // optional
     // custom cleanup code here (runs when it STOPS matching)
@@ -110,7 +110,7 @@ mm.add("(max-width: 800px)", () => {
   // this setup code only runs when viewport is at least 800px wide
   gsap.from(".RL", { x: 250, duration: 2 });
   gsap.from(".LR", { x: -190, duration: 2 });
-  gsap.from(".RL2", { x: 200, duration: 2 });
+  gsap.from(".RL2", { x: 250, duration: 2 });
 
   return () => { // optional
     // custom cleanup code here (runs when it STOPS matching)
