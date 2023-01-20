@@ -1,5 +1,20 @@
 const pluginTailwind = require('eleventy-plugin-tailwindcss');
 
+const pluginTOC = require('eleventy-plugin-toc')
+const markdownIt = require('markdown-it')
+const markdownItAnchor = require('markdown-it-anchor')
+const mdOptions = {
+  html: true,
+  breaks: true,
+  linkify: true,
+  typographer: true
+}
+const mdAnchorOpts = {
+  permalink: true,
+  permalinkClass: 'anchor-link',
+  permalinkSymbol: '#',
+  level: [1, 2, 3, 4]
+}
 
 module.exports = (config) => {
   config.addPlugin(pluginTailwind, {
@@ -14,6 +29,15 @@ module.exports = (config) => {
   config.addPassthroughCopy('src/projets/img');
   config.addPassthroughCopy({ 'src/posts/img/**/*': 'assets/img/' });
   config.addPassthroughCopy({ 'src/projets/img/**/*': 'assets/img/' });
+
+  //11ty Plugins 
+  config.addPlugin(pluginTOC)
+  
+  config.setLibrary(
+    'md',
+    markdownIt(mdOptions)
+      .use(markdownItAnchor, mdAnchorOpts)
+  )
 
   //JS Modules
 

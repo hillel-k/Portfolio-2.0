@@ -634,3 +634,9 @@ vertical-align: top;
 .grid-item video, .grid-item img {
   border-radius: 10px;
 }
+
+aside {
+  position: sticky;
+  top: 2rem;
+  height: fit-content;
+}

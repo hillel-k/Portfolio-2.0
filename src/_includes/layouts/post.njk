@@ -4,7 +4,7 @@ layout: default
 
 <article class="w-11/12 sm:w-full max-w-5xl mx-auto">
     <header class="mb-14 mt-14">
-        <h1 class="text-3xl text-center font-bold leading-normal text-gray-900 mt-0 mb-3 max-w-3xl mx-auto">{{ title }}</h1>
+        <h1 class="text-3xl text-center font-bold leading-normal text-gray-900 mt-0 mb-3 max-w-3xl mx-auto sm:px-4 px-0">{{ title }}</h1>
         <!--<div class="text-center">Publiée on {{ page.date | readableDate }}</div>-->
         <p class="mx-auto italic text-center">Rédigé par Hillel K.</p>
         {% if tags %}
@@ -16,13 +16,22 @@ layout: default
         {% endif %}
         {% if thumb %}
         <div class="mt-10  md:mx-0">
-            <img class="w-full max-w-2xl mx-auto overflow-hidden shadow-md rounded-lg" src="{{ thumb | url }}" width="960" height="500" alt="This post thumbnail">
+            <img class="w-full max-w-3xl mx-auto overflow-hidden shadow-md rounded-lg" src="{{ thumb | url }}" width="960" height="500" alt="This post thumbnail">
         </div>
         {% endif %}
     </header>
-    <div id="content" class="prose text-gray-800 max-w-5xl mx-auto w-11/12 sm:w-full">
-        {{ content | safe }}
+    <div id="content" class="prose text-gray-800 max-w-5xl w-11/12 sm:w-full sm:px-4 px-0 flex flex-row gap-4 texteBlog">
+        <div>
+            {{ content | safe }}
+        </div>
+
+
+        <aside class="w w-1/5 hidden md:block">
+            <p class="text-portfolio-vert font-bold">Sommaire de l'article</p>
+            {{ content | toc | safe }}
+        </aside>
     </div>
+
     {% if site.disqusShortname %}
     <div class="mt-10">
         {% if process.environment === "production" %}
@@ -32,6 +41,8 @@ layout: default
         {% endif %}
     </div>
     {% endif %}
+
+
 </article>
 
 <div class="flex flex-wrap mx-auto">
