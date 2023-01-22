@@ -37,6 +37,8 @@
 		"@swup/body-class-plugin": "^1.0.2",
 		"@swup/debug-plugin": "^2.0.0",
 		"@swup/preload-plugin": "^1.0.5",
+		"eleventy-plugin-metagen": "^1.7.11",
+		"eleventy-plugin-reading-time": "0.0.1",
 		"eleventy-plugin-toc": "^1.1.5",
 		"markdown-it-anchor": "^8.6.6",
 		"modularload": "^1.2.8",

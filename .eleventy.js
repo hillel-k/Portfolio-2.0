@@ -16,6 +16,12 @@ const mdAnchorOpts = {
   level: [1, 2, 3, 4]
 }
 
+const metagen = require('eleventy-plugin-metagen');
+
+const readingTime = require('eleventy-plugin-reading-time');
+
+
+
 module.exports = (config) => {
   config.addPlugin(pluginTailwind, {
     src: 'src/assets/css/*'
@@ -38,6 +44,11 @@ module.exports = (config) => {
     markdownIt(mdOptions)
       .use(markdownItAnchor, mdAnchorOpts)
   )
+
+  config.addPlugin(metagen);
+
+  config.addPlugin(readingTime);
+
 
   //JS Modules
 

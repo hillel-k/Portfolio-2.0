@@ -4,9 +4,11 @@ layout: default
 
 <article class="w-11/12 sm:w-full max-w-5xl mx-auto">
     <header class="mb-14 mt-14">
-        <h1 class="text-3xl text-center font-bold leading-normal text-gray-900 mt-0 mb-3 max-w-3xl mx-auto sm:px-4 px-0">{{ title }}</h1>
+        <h1 class="text-3xl text-center font-bold leading-normal text-gray-900 mt-0 max-w-2xl mx-auto sm:px-4 px-0">{{ title }}</h1>
         <!--<div class="text-center">Publiée on {{ page.date | readableDate }}</div>-->
-        <p class="mx-auto italic text-center">Rédigé par Hillel K.</p>
+
+         <p class="meta__stats text-center">Temps de lecture : {{ content | readingTime }} minutes</p>
+         <p class="mx-auto italic text-center">Rédigé par Hillel K.</p>
         {% if tags %}
         <!--<div class="mt-3 text-center">
             {% for tag in tags %}
