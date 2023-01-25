@@ -25,8 +25,10 @@ La marque s'adresse principalement à une clientèle féminine et déjà familia
 
 ## Démarche Créative
 
-<img class="rounded imgProjet" src="/projets/img/maBoxPharma/coverMaBoxPharma.jpg " alt="presentation de 3 produits"/>
- <figcaption>Visuels "Mise en avant 3 produits"</figcaption> 
+<img-comparison-slider hover="hover" tabindex="0" class="rendered slider-example-relative-size coloured-slider" class="rounded imgProjet">
+  <img slot="first" src="/projets/img/maBoxPharma/cureClay.jpg" />
+  <img slot="second" src="/projets/img/maBoxPharma/coverMaBoxPharma.jpg"/>
+</img-comparison-slider>
 
 La marque a pour objectif de reproduire visuellement les éléments graphiques utilisés lors de l'échange traditionnel entre un pharmacien et un patient. Ces éléments peuvent être des annotations sur la boîte de médicament pour indiquer la posologie, ou des post-it pour recommander un produit en parapharmacie. Cependant, il est important de ne pas confondre ces éléments avec ceux utilisés par un médecin : le service proposé par la marque ne remplace en aucun cas une ordonnance médicale.
 
