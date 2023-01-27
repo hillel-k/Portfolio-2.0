@@ -4,6 +4,7 @@ description: Des différences et un choix à prendre pour les entreprises
 author: Hillel K.
 date: 2023-01-13T13:35:29.779Z
 thumb: site-vitrine-ou-ecommerce.jpg
+redirectFrom: /site-vitrine-ou-ecommerce/
 
 ---
 

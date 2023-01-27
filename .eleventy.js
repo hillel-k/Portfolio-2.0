@@ -29,6 +29,9 @@ module.exports = (config) => {
 
   config.setDataDeepMerge(true);
 
+  //Redirections 
+  config.addPassthroughCopy('src/_redirects');
+
  
   config.addPassthroughCopy('src/assets/img/*');
   config.addPassthroughCopy('src/assets/img/lab/*');

@@ -6,6 +6,7 @@ description: C’est bon ! Vous avez créé votre site, il est beau et reflète
 author: Hillel K.
 date: 2021-10-20T13:35:29.779Z
 thumb: Comment-fonctionne-le-référencement.jpg
+redirectFrom: /comment-fonctionne-le-référencement/
 
 ---
 C’est bon ! Vous avez créé votre site, il est beau et reflète parfaitement votre activité. Après avoir reçu des compliments de votre entourage. Vous vous rendez vite compte que malgré son esthétique personne ne visite votre site.

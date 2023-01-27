@@ -4,7 +4,7 @@ description: Le métier de graphiste est assez généraliste, car il regroupe de
 author: Hillel
 date: 2021-08-27T11:41:04.587Z
 thumb: qu-est-ce-qu-un-graphiste-marseille.jpg
-tags:
+redirectFrom: /qu-est-ce-qu-un-graphiste/
 
 ---
 

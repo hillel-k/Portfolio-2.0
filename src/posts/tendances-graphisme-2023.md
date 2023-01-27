@@ -4,6 +4,7 @@ description: Une prediction des tendances pour le graphisme en 2023
 author: Hillel K.
 date: 2023-01-12T13:35:29.779Z
 thumb: tendances-graphisme-2023.jpg
+redirectFrom: /tendances-graphisme-2023/
 
 ---
 

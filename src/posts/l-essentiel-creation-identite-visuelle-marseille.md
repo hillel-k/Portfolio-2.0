@@ -4,7 +4,7 @@ description: L’identité visuelle constitue la base de la communication entrep
 author: Hillel
 date: 2022-03-27T11:41:04.587Z
 thumb: comment-creer-un-site.jpg
-tags:
+redirectFrom: /l-essentiel-creation-identite-visuelle-marseille/
 
 ---
 
