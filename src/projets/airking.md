@@ -7,7 +7,7 @@ thumb: heroVideo.gif
 tags:
   - Site Internet
   - 3D 
-
+redirectFrom: /airking/
 ---
 
 ## Démarche créative

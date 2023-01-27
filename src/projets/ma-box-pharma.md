@@ -9,6 +9,7 @@ tags:
   - 3D
   - Identité Visuelle
   - Site Internet
+redirectFrom: /ma-box-pharma/
 ---
 ## Présentation
 

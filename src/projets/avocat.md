@@ -8,6 +8,7 @@ annee: 2018
 tags:
   - Identité Visuelle
   - Site Internet
+redirectFrom: /avocat/
 ---
 
 ## Démarche créative

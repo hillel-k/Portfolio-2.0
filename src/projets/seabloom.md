@@ -8,6 +8,7 @@ annee: 2020
 tags:
   - Packaging
   - Identité Visuelle
+redirectFrom: /seabloom/
 ---
 
 ## Démarche Créative

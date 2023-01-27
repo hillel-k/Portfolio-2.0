@@ -8,6 +8,7 @@ annee: 2020
 tags:
   - Identité Visuelle
   - Site Internet
+redirectFrom: /beyahad/
 ---
 
 ## Démarche Créative 

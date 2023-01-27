@@ -9,6 +9,7 @@ tags:
   - Identité Visuelle
   - 3D
   - Site Internet
+redirectFrom: /evershape/
 ---
 
 ## Démarche créative

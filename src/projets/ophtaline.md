@@ -8,6 +8,7 @@ annee: 2019
 tags:
   - Identité Visuelle
   - Site Internet
+redirectFrom: /ophtaline/
 ---
 
 ## Démarche Créative 

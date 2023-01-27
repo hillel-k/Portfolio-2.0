@@ -8,6 +8,7 @@ tags:
   - 3D 
   - Site Internet
   - Print
+redirectFrom: /vital/
 ---
 
 ## Démarche créative

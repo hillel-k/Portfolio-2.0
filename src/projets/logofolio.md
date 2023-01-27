@@ -7,6 +7,7 @@ thumb: coverLogofolio.jpg
 annee: à partir de 2018
 tags:
   - Identité Visuelle
+redirectFrom: /logofolio/
 
 ---
 

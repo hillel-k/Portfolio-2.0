@@ -8,6 +8,7 @@ annee: 2021
 tags:
   - Packaging
   - 3D
+redirectFrom: /tour-campanet/
 ---
 
 ## Démarche créative
