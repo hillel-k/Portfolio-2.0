@@ -8,7 +8,7 @@ keywords: graphiste, portfolio, marseille, 3D, site vitrine
 <section id="hero">
   <div class="flex ninetyVh items-center justify-center content-center">
     <div
-      class="w-full h-5/6 flex flex-col-reverse sm:flex-row items-center justify-evenly overflow-hidden"
+      class="w-11/12 lg:w-full h-5/6 flex flex-col-reverse sm:flex-row items-center justify-evenly overflow-hidden"
     >
 
     <div id="lottieHero">
@@ -498,6 +498,8 @@ keywords: graphiste, portfolio, marseille, 3D, site vitrine
       >
     </div>
 
+
+
     <div>
       <div>
         <!-- Début de widget en ligne Calendly -->
@@ -507,11 +509,16 @@ keywords: graphiste, portfolio, marseille, 3D, site vitrine
           style="min-width: 45%; height: 38rem"
           
         ></div>
-        <script
-          type="text/javascript"
-          src="https://assets.calendly.com/assets/external/widget.js"
-          async
-        ></script>
+        <script>
+          window.onload = function() {
+        window.setTimeout(function () { 
+         var script = document.createElement('script');
+      script.async = true;
+      script.src = 'https://assets.calendly.com/assets/external/widget.js';
+      document.querySelector('head').appendChild(script);
+     }, 3000);
+    };
+        </script>
         <!-- Fin de widget en ligne Calendly -->
       </div>
     </div>
