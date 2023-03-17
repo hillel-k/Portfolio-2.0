@@ -30,6 +30,7 @@ body{
     background-attachment: fixed;
     scroll-behavior: smooth;
     font-variant-numeric: oldstyle-nums;
+    box-sizing: border-box;
 }
     h1,h2,h3,h4{
     font-family: rufina-stencil, sans-serif;
@@ -38,6 +39,7 @@ body{
 
 header {
   background-color: transparent;
+  border: 1px solid #3B683E!important;
 }
 
 
@@ -205,15 +207,12 @@ p{
 }
 
 #heroVideo {
-    z-index: 5;
-    position: absolute;
-    overflow: hidden;
-    bottom: 11rem;
-    
+    z-index: 5;    
 }
 
 #lottieHero {
     position: absolute;
+    z-index: -3;
 }
 
 #teteVideo {
@@ -447,12 +446,18 @@ figcaption {
 }
 
 @media (max-width: 768px) {
+
+  header {
+    width: 90%!important;
+    margin-top: 1rem!important;
+  }
+
   .ninetyVh{
-    height: 75vh;
+    height: 89vh;
   }
 
   #heroVideo {
-    display: none;
+   
   }
 
   .grilleService {
@@ -638,6 +643,10 @@ vertical-align: top;
 
 aside {
   position: sticky;
-  top: 2rem;
+  top: 6rem;
   height: fit-content;
+}
+
+.w-fit {
+  width: fit-content;
 }

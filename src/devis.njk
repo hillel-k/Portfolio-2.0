@@ -1,0 +1,708 @@
+---
+layout: default
+title: Devis - Contact
+---
+
+<section
+  class="w-screen h-screen flex align-middle items-center justify-center z-50 absolute bg-portfolio-vertLg bgDevis">
+  <div>
+
+    <form id="quote-form" method="POST">
+
+      <div class="form-step" id="step-1">
+
+        <div class="max-w-xl mx-auto text-center mb-7">
+
+          <h1 class="mb-2">Estimez vos besoins graphiques</h1>
+          <p class="text-gray-800 text-center max-w-sm mx-auto">Estimez la création de vos besoins graphiques grâce à ce
+            calculateur.
+            C'est rapide et sans demande d'email ni d'informations intrusives.</p>
+
+
+
+        </div>
+
+        <div class="navButton">
+          <button type="button" class="next-button" onclick="nextStep()">
+            Suivant
+          </button>
+
+        </div>
+      </div>
+
+      <div class="form-step" id="step-2">
+        <div class="form-group">
+          <h2 class="text-center">Quel est la nature de votre projet ?</h2>
+
+
+          <label for="" class="text-center">Veuillez sélectionner l'un des types de projets dans la liste
+            ci-dessous</label>
+          <div class="radio-group-projet">
+            <label class="radio-item">
+              <div class="radio-image">
+                <img src="/assets/img/ampoule.png" width="100px" alt="Product 1" />
+                <span class="radio-label">Site Internet</span>
+                <input type="radio" name="product-type" value="1" />
+              </div>
+            </label>
+            <label class="radio-item">
+              <div class="radio-image">
+                <img src="/assets/img/ampoule.png" width="100px" alt="Product 1" />
+                <span class="radio-label">Site + Identité Visuelle</span>
+                <input type="radio" name="product-type" value="2" />
+              </div>
+            </label>
+            <label class="radio-item">
+              <div class="radio-image">
+                <img src="/assets/img/ampoule.png" width="100px" alt="Product 1" />
+                <span class="radio-label">Site + Identité Visuelle + Support</span>
+                <input type="radio" name="product-type" value="3" />
+              </div>
+            </label>
+
+          </div>
+        </div>
+        <div class="navButton">
+          <button type="button" class="prev-button" onclick="prevStep()">
+            Précédent
+          </button>
+          <button type="button" class="next-button" onclick="nextStep()">
+            Suivant
+          </button>
+        </div>
+      </div>
+
+      <div class="form-step" id="step-3">
+        <div class="form-group">
+          <h2 class="text-center">Niveau de création</h2>
+
+
+          <label for="" class="text-center">Veuillez sélectionner l'un des deux niveaux</label>
+          <div class="radio-group-level">
+            <label class="radio-item">
+              <div class="radio-image">
+                <img src="/assets/img/ampoule.png" width="100px" alt="Product 1" />
+                <span class="radio-label">Template</span>
+                <div>
+                  <p>Une création personnalisé & au budget maitrisé</p>
+                  <p>Création d'une maquette basse fidélité</p>
+
+                </div>
+                <input type="radio" name="product-type" value="1" />
+              </div>
+            </label>
+            <label class="radio-item">
+              <div class="radio-image">
+                <img src="/assets/img/ampoule.png" width="100px" alt="Product 1" />
+                <span class="radio-label">Sur-Mesure</span>
+                <div>
+                  <p>Une création unique à partir d'une page blanche</p>
+                  <p>Création d'une maquette haute fidélité</p>
+                  <p>Conception d'éléments graphique propre a votre marque</p>
+
+                </div>
+                <input type="radio" name="product-type" value="2" />
+              </div>
+            </label>
+
+          </div>
+        </div>
+        <div class="navButton">
+          <button type="button" class="prev-button" onclick="prevStep()">
+            Précédent
+          </button>
+          <button type="button" class="next-button" onclick="nextStep()">
+            Suivant
+          </button>
+        </div>
+      </div>
+
+
+
+
+      <div class="form-step" id="step-4">
+        <div class="text-center">
+          <label for="how-hear">Votre projet est estimée :</label>
+
+          <p>
+            <span id="quoteResult" class="text-4xl text-portfolio-vert">**5*</span>€
+          </p>
+        </div>
+
+
+        <div class="text-center mt-2">
+          <span class="text-gray-600 w-full">Ceci est une estimation et ne constitue pas un devis final. <br>
+            Pour obtenir un devis complet envoyer votre demande</span>
+        </div>
+
+
+        <div class="navButton">
+          <button type="button" class="prev-button" onclick="prevStep()">
+            Modifier mes choix
+          </button>
+          <button type="button" class="next-button" onclick="nextStep()">
+            Envoyer une demande
+          </button>
+
+        </div>
+
+
+      </div>
+
+      <div class="form-step" id="step-5">
+        <h2 class="text-center">Les details de votre projet</h2>
+
+        <label for="project-type">Nom du projet</label>
+        <input type="text" id="project-type" name="project-type" placeholder="Cool Clothing " required />
+
+        <label for="project-description">Description du projet</label>
+        <textarea id="project-description" name="project-description"
+          placeholder="Je souhaite créer ma marque de vetement avec un site vitrine" required></textarea>
+
+        <label for="project-budget">Budget alloué au projet</label>
+        <div class="slidecontainer">
+
+          <input type="range" min="0" max="100" step="25" class="slider" id="myRange" ontouchstart
+            oninput="updateText()">
+          <p class="text-center text-sm mt-2 text-gray-800 " id="slider-text"></p>
+
+
+        </div>
+
+        <div class="navButton">
+          <button type="button" class="prev-button" onclick="prevStep()">
+            Précédent
+          </button>
+          <button type="button" class="next-button" onclick="nextStep()">
+            Suivant
+          </button>
+        </div>
+      </div>
+
+      <div class="form-step" id="step-6">
+        <div class="dateWrapper">
+          <div>
+            <label for="start-date">Date de début souhaitée</label>
+            <input type="date" id="start-date" name="start-date" required />
+          </div>
+
+          <div>
+            <label for="deadline">Date limite du projet</label>
+            <input type="date" id="deadline" name="deadline" required />
+          </div>
+
+        </div>
+
+
+        <label for="tech-specs">Des besoins particuliers ? <br>
+          <span class="spanLabel">Un service est déja en place, une technologie </span>
+        </label>
+        <textarea id="tech-specs" name="tech-specs"></textarea>
+
+        <div class="navButton">
+          <button type="button" class="prev-button" onclick="prevStep()">
+            Précédent
+          </button>
+          <button type="button" class="next-button" onclick="nextStep()">
+            Suivant
+          </button>
+        </div>
+      </div>
+
+
+      <div class="form-step" id="step-7">
+        <div class="labelInput">
+          <label for="name">Nom complet</label>
+          <input type="text" id="name" name="name" required />
+        </div>
+
+        <div class="labelInput">
+          <label for="email">Adresse e-mail</label>
+          <input type="email" id="email" name="email" required />
+        </div>
+
+        <div class="labelInput">
+          <label for="phone">Numéro de téléphone</label>
+          <input type="tel" id="phone" name="phone" required />
+        </div>
+
+        <div class="navButton">
+          <button type="button" class="prev-button" onclick="prevStep()">
+            Précédent
+          </button>
+          <button type="submit" class="submit-button">Envoyer la demande</button>
+
+        </div>
+
+      </div>
+
+
+
+
+  </div>
+  </form>
+  </div>
+</section>
+
+<style>
+  * {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+  }
+
+  .bgDevis {
+    background-color: #e2eae1;
+    background-color: #f7f9f7;
+    background-color: #fbfdfb;
+    background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='100' height='100' viewBox='0 0 100 100'%3E%3Cg fill-rule='evenodd'%3E%3Cg fill='%234f6b49' fill-opacity='0.09'%3E%3Cpath opacity='.5' d='M96 95h4v1h-4v4h-1v-4h-9v4h-1v-4h-9v4h-1v-4h-9v4h-1v-4h-9v4h-1v-4h-9v4h-1v-4h-9v4h-1v-4h-9v4h-1v-4h-9v4h-1v-4H0v-1h15v-9H0v-1h15v-9H0v-1h15v-9H0v-1h15v-9H0v-1h15v-9H0v-1h15v-9H0v-1h15v-9H0v-1h15v-9H0v-1h15V0h1v15h9V0h1v15h9V0h1v15h9V0h1v15h9V0h1v15h9V0h1v15h9V0h1v15h9V0h1v15h9V0h1v15h4v1h-4v9h4v1h-4v9h4v1h-4v9h4v1h-4v9h4v1h-4v9h4v1h-4v9h4v1h-4v9h4v1h-4v9zm-1 0v-9h-9v9h9zm-10 0v-9h-9v9h9zm-10 0v-9h-9v9h9zm-10 0v-9h-9v9h9zm-10 0v-9h-9v9h9zm-10 0v-9h-9v9h9zm-10 0v-9h-9v9h9zm-10 0v-9h-9v9h9zm-9-10h9v-9h-9v9zm10 0h9v-9h-9v9zm10 0h9v-9h-9v9zm10 0h9v-9h-9v9zm10 0h9v-9h-9v9zm10 0h9v-9h-9v9zm10 0h9v-9h-9v9zm10 0h9v-9h-9v9zm9-10v-9h-9v9h9zm-10 0v-9h-9v9h9zm-10 0v-9h-9v9h9zm-10 0v-9h-9v9h9zm-10 0v-9h-9v9h9zm-10 0v-9h-9v9h9zm-10 0v-9h-9v9h9zm-10 0v-9h-9v9h9zm-9-10h9v-9h-9v9zm10 0h9v-9h-9v9zm10 0h9v-9h-9v9zm10 0h9v-9h-9v9zm10 0h9v-9h-9v9zm10 0h9v-9h-9v9zm10 0h9v-9h-9v9zm10 0h9v-9h-9v9zm9-10v-9h-9v9h9zm-10 0v-9h-9v9h9zm-10 0v-9h-9v9h9zm-10 0v-9h-9v9h9zm-10 0v-9h-9v9h9zm-10 0v-9h-9v9h9zm-10 0v-9h-9v9h9zm-10 0v-9h-9v9h9zm-9-10h9v-9h-9v9zm10 0h9v-9h-9v9zm10 0h9v-9h-9v9zm10 0h9v-9h-9v9zm10 0h9v-9h-9v9zm10 0h9v-9h-9v9zm10 0h9v-9h-9v9zm10 0h9v-9h-9v9zm9-10v-9h-9v9h9zm-10 0v-9h-9v9h9zm-10 0v-9h-9v9h9zm-10 0v-9h-9v9h9zm-10 0v-9h-9v9h9zm-10 0v-9h-9v9h9zm-10 0v-9h-9v9h9zm-10 0v-9h-9v9h9zm-9-10h9v-9h-9v9zm10 0h9v-9h-9v9zm10 0h9v-9h-9v9zm10 0h9v-9h-9v9zm10 0h9v-9h-9v9zm10 0h9v-9h-9v9zm10 0h9v-9h-9v9zm10 0h9v-9h-9v9z'/%3E%3Cpath d='M6 5V0H5v5H0v1h5v94h1V6h94V5H6z'/%3E%3C/g%3E%3C/g%3E%3C/svg%3E");
+    background-attachment: fixed;
+  }
+
+  label {
+    display: block;
+    font-weight: 500;
+    margin-bottom: 0.4rem;
+    margin-top: 0.7rem;
+  }
+
+  h2 {
+    font-size: 1.9rem;
+  }
+
+  textarea {
+    width: 100%;
+    background-color: #f9f9f9;
+    border: none;
+    border-radius: 10px;
+    min-height: 100px;
+    max-height: 50vh;
+  }
+
+  textarea:focus {
+    border: rgb(59, 104, 62) solid 1px;
+    background-color: #e2eae1;
+  }
+
+  .navButton {
+    margin-top: 1rem;
+    width: 100%;
+    display: flex;
+    flex-direction: row;
+    gap: 10px;
+  }
+
+  .submit-button {
+    background-color: #3b683e;
+    color: white;
+    border-radius: 4px;
+    width: 90%;
+  }
+
+  .radio-item {
+    display: flex !important;
+    flex-direction: column !important;
+    align-items: center;
+    justify-content: center;
+  }
+
+  /* target the label element that comes immediately after a checked radio input */
+  input[type=radio]:checked+label {
+    /* Or `#a1:checked+label` if you only want it for that input */
+    background-color: #0F6;
+  }
+
+
+
+  .span.radio-label {
+    text-align: center;
+  }
+
+  .spanLabel {
+    font-weight: 300;
+    font-size: 0.8rem;
+    color: rgb(48, 48, 48);
+  }
+
+
+  .radio-group-projet {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-template-rows: 1fr 1fr;
+    gap: 10px;
+  }
+
+  .radio-group-level {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-template-rows: 1fr;
+    gap: 10px;
+  }
+
+  input {
+    padding: 0.4rem 0.9rem;
+    background: #f9f9f9;
+    border: none;
+    border-radius: 5px;
+    width: 100%;
+  }
+
+  input:focus {
+    border: rgb(59, 104, 62) solid 1px;
+    background-color: #e2eae1;
+  }
+
+  .slidecontainer {
+    width: 100%;
+    /* Width of the outside container */
+  }
+
+  .dateWrapper {
+    display: flex;
+    flex-direction: row;
+    gap: 1rem;
+  }
+
+  .dateWrapper div {
+    width: 49%;
+  }
+
+  /* The slider itself */
+  .slider {
+    -webkit-appearance: none;
+    /* Override default CSS styles */
+    appearance: none;
+    width: 100%;
+    /* Full-width */
+    height: 25px;
+    /* Specified height */
+    background: #d3d3d3;
+    /* Grey background */
+    outline: none;
+    /* Remove outline */
+    opacity: 0.7;
+    /* Set transparency (for mouse-over effects on hover) */
+    -webkit-transition: .2s;
+    /* 0.2 seconds transition on hover */
+    transition: opacity .2s;
+  }
+
+  /* Mouse-over effects */
+  .slider:hover {
+    opacity: 1;
+    /* Fully shown on mouse-over */
+  }
+
+  /* The slider handle (use -webkit- (Chrome, Opera, Safari, Edge) and -moz- (Firefox) to override default look) */
+  .slider::-webkit-slider-thumb {
+    -webkit-appearance: none;
+    /* Override default look */
+    appearance: none;
+    width: 25px;
+    /* Set a specific slider handle width */
+    height: 25px;
+    /* Slider handle height */
+    background: #3b683e;
+    /* Green background */
+    cursor: pointer;
+    /* Cursor on hover */
+    border-radius: 10px;
+  }
+
+  .slider::-moz-range-thumb {
+    width: 25px;
+    /* Set a specific slider handle width */
+    height: 25px;
+    /* Slider handle height */
+    background: #3b683e;
+    /* Green background */
+    cursor: pointer;
+    /* Cursor on hover */
+  }
+
+  form {
+    width: 720px;
+    margin: 0 auto;
+    background-color: #fff;
+    border-radius: 8px;
+    box-shadow: 0 0 20px rgba(0, 0, 0, 0.1);
+    overflow: hidden;
+  }
+
+  .form-step {
+    display: none;
+    padding: 2rem 3rem;
+  }
+
+  .form-step:first-child {
+    display: block;
+  }
+
+  .form-group {
+    margin-bottom: 20px;
+  }
+
+  .form-group label {
+    display: block;
+    margin-bottom: 10px;
+    font-size: 0.9rem;
+    font-weight: 500;
+    color: #222;
+  }
+
+  .form-group input,
+  .form-group select {
+    width: 100%;
+    padding: 10px;
+    border: none;
+    background-color: #f9f9f9;
+    border-radius: 4px;
+    font-size: 16px;
+    color: #222;
+    transition: background-color 0.3s ease;
+  }
+
+  .form-group input:focus,
+  .form-group select:focus {
+    outline: none;
+    background-color: #eee;
+  }
+
+  .labelInput {
+    display: flex;
+    align-items: baseline;
+    gap: 0.1rem;
+    flex-direction: column;
+  }
+
+  label.radio-item {
+    background-color: #e2eae173;
+    border-radius: 10px;
+  }
+
+  label.radio-item:focus {
+    border: 1px solid #3b683e;
+  }
+
+  .prev-button,
+  .next-button {
+    background-color: #e2eae1;
+    border: none;
+    color: #222;
+    border: #3b683e solid 1px;
+    padding: 10px 20px;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    font-size: 16px;
+    border-radius: 4px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+    width: 49%;
+    display: inline-block;
+    margin-right: auto;
+  }
+
+  .prev-button:hover,
+  .next-button:hover {
+    background-color: #3b683e;
+    color: white;
+  }
+
+  .next-button {
+    margin-left: auto;
+    background-color: #3b683e;
+    color: white;
+    transition: all 0.2s;
+  }
+
+  .next-button:hover {
+    opacity: 0.8;
+
+  }
+
+  .prev-button {
+    border: none;
+    opacity: 0.9;
+  }
+
+  .form-progress {
+    height: 4px;
+    background-color: #eee;
+    margin-bottom: 30px;
+    position: relative;
+  }
+
+  .form-progress::before {
+    content: "";
+    position: absolute;
+    left: 0;
+    top: 0;
+    height: 100%;
+    width: 0;
+    background-color: #5b67ff;
+    transition: width 0.3s ease;
+  }
+
+  .form-progress-step {
+    width: calc(100% / 4);
+    height: 100%;
+    background-color: transparent;
+    position: absolute;
+    top: 0;
+    left: 0;
+  }
+
+  .form-progress-step:first-child {
+    left: 0;
+  }
+
+  .form-progress-step:last-child {
+    right: 0;
+  }
+
+  .form-progress-step.active~.form-progress::before {
+    width: calc(100% / 4);
+  }
+
+  .form-progress-step.active {
+    background-color: #5b67ff;
+    border: 2px solid #5b67ff;
+    color: #fff;
+    border-radius: 50%;
+    font-size: 12px;
+    font-weight: 600;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    position: relative;
+    z-index: 1;
+  }
+
+  .form-progress-step.active:before {
+    content: "";
+    position: absolute;
+    top: -10px;
+    left: 50%;
+    transform: translateX(-50%);
+    width: 20px;
+    height: 20px;
+    background-color: #5b67ff;
+    border-radius: 50%;
+    z-index: -1;
+  }
+
+  @media screen and (max-width: 768px) {
+    form {
+      width: 90%;
+    }
+
+    .dateWrapper {
+      flex-direction: column;
+    }
+
+    .dateWrapper div {
+      width: 100%;
+    }
+  }
+
+  @media screen and (max-width: 480px) {
+    .form-step {
+      padding: 20px;
+    }
+
+    .form-group input,
+    .form-group select {
+      font-size: 1rem;
+    }
+
+    .prev-button,
+    .next-button {
+      font-size: 14px;
+      padding: 8px 16px;
+    }
+
+    .form-progress-step {
+      font-size: 10px;
+    }
+
+    h1 {
+      font-size: 24px;
+      margin: 30px 0;
+    }
+  }
+</style>
+
+<script>
+  //Calcul 
+
+
+  
+  
+  // Récupération des éléments du formulaire
+  const form = document.getElementById("quote-form");
+  const formSteps = document.querySelectorAll(".form-step");
+  const prevButton = document.querySelectorAll(".prev-button");
+  const nextButton = document.querySelectorAll(".next-button");
+
+  // Afficher la première étape du formulaire
+  formSteps[0].style.display = "block";
+
+  // Fonction pour passer à l'étape suivante
+  function nextStep() {
+    let currentStep = 0;
+    for (let i = 0; i < formSteps.length; i++) {
+      if (formSteps[i].style.display === "block") {
+        currentStep = i;
+        formSteps[i].style.display = "none";
+      }
+    }
+    formSteps[currentStep + 1].style.display = "block";
+  }
+
+  // Fonction pour revenir à l'étape précédente
+  function prevStep() {
+    let currentStep = 0;
+    for (let i = 0; i < formSteps.length; i++) {
+      if (formSteps[i].style.display === "block") {
+        currentStep = i;
+        formSteps[i].style.display = "none";
+      }
+    }
+    formSteps[currentStep - 1].style.display = "block";
+  }
+
+  // Écouter le clic sur le bouton de soumission et envoyer le formulaire
+  form.addEventListener("submit", function (event) {
+    event.preventDefault();
+    const formData = new FormData(form);
+    // Traitement des données du formulaire ici
+  });
+
+  var slider = document.getElementById("myRange");
+  var output = document.getElementById("demo");
+  output.innerHTML = slider.value; // Display the default slider value
+
+  // Update the current slider value (each time you drag the slider handle)
+  function updateText() {
+    var sliderValue = document.querySelector('input[type="range"]').value;
+    var sliderText = document.querySelector('#slider-text');
+
+    if (sliderValue == 0) {
+      sliderText.innerText = "Moins de 500€";
+    } else if (sliderValue == 25) {
+      sliderText.innerText = "Moins de 1 000€";
+    } else if (sliderValue == 50) {
+      sliderText.innerText = "Entre 1 000 € & 2 000 €";
+    } else if (sliderValue == 75) {
+      sliderText.innerText = "Entre 2 000€ & 5 000 €";
+    } else {
+      sliderText.innerText = "Plus de 5 000 €";
+    }
+  }
+
+  // Add an event listener to the slider input element
+  var slider = document.querySelector('input[type="range"]');
+  slider.addEventListener('input', updateText);
+
+</script>
