@@ -98,8 +98,8 @@ p{
     clip-path: polygon(0 100%, 100% 100%, 100% 100%, 0% 100%);
 }
 .main-gallery{
-    height: 80vh;
-    width: 100%;
+    height: 60vh;
+    width: 90%;
     max-width: 72rem;
 
 
@@ -276,8 +276,6 @@ figcaption {
     overflow: hidden;
     position: relative;
     background-color: #E2EAE1;  
-    border-top: 1px solid #3B683E;
-    border-bottom: 1px solid #3B683E;
     padding: 8px 0 8px 0;
     color: #3B683E;
     font-size: 2rem;
@@ -509,7 +507,8 @@ figcaption {
     }
 
     .imgAvis {
-      bottom: 82%;
+      bottom: 88%;
+      width: 80%;
     }
 
     .textIntro {

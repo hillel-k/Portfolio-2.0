@@ -1,19 +1,18 @@
 {%- set lazyImage = "data:image/svg+xml,%3Csvg%20xmlns%3D'http%3A%2F%2Fwww.w3.org%2F2000%2Fsvg'%20viewBox%3D'0%200%201%201'%20height%3D'500'%20width%3D'960'%20style%3D'background-color%3Argb(203%2C213%2C224)'%2F%3E" -%}
 {% for projet in paged.projets %}
+
 <div class="w-11/12 sm:w-1/2 md:w-1/2 mx-auto self-stretch p-2 mb-2 projetCell">
+
     <div class="h-full">
         <a href="{{ projet.url | url }}">
             <img class="w-full m-0 lazy rounded-t-lg shadow-sm " src="{{ lazyImage }}" data-src="{% if projet.data.thumb %}{{ projet.data.thumb | url }}{% else %}{{ '/assets/img/no-image.svg' | url }}{% endif %}" width="auto" height="auto" alt="This projet thumbnail">
         </a>
+        <a href="{{ projet.url | url }}">
         <div class="px-6 py-5 flex justify-between items-baseline bg-white rounded-b-lg shadow-md">
             <div class="font-semibold text-lg">
-                <a class="text-gray-900 hover:text-gray-700" href="{{ projet.url | url }}">{{ projet.data.title }}</a>
+                <span class="text-gray-900 hover:text-gray-700" href="{{ projet.url | url }}">{{ projet.data.title }}</span>
                 <p class="text-gray-700 font-normal mb-2" title="Published date">{{ projet.data.page.date | readableDate }}</p>
             </div>
-
-            {% for tag in tags %}
-            <a href="{{ '/tags/' | url }}{{ tag }}" class="inline-block bg-gray-200 rounded-full px-3 py-1 text-sm font-medium text-gray-700 m-0.5">#{{ tag }}</a>
-            {% endfor %}
             
             <p class="text-gray-800 text-right max-w-xs">
                 {% if projet.data.description %}
@@ -23,7 +22,10 @@
                 {% endif %}
             </p>
         </div>
+        </a>
     </div>
+
 </div>
+
 
 {% endfor %}
