@@ -1,4 +1,6 @@
-<header id="header" class="bg-portfolio-vertLg rounded-md bg-clip-padding backdrop-filter backdrop-blur-sm bg-opacity-40 border border-gray-100 fixed inset-x-0 max-w-screen-md top-5 bg px-6 py-5 z-40 w-full" style="    left: 50%;
+<header id="header"
+    class="bg-portfolio-vertLg rounded-md bg-clip-padding backdrop-filter backdrop-blur-sm bg-opacity-40 border border-gray-100 fixed inset-x-0 max-w-screen-md top-5 bg px-6 py-5 z-40 w-full"
+    style="    left: 50%;
 transform: translate(-50%, 0);  box-shadow: 0 4px 5px rgb(0 0 0 / 10%);">
     <div class="max-w-5xl mx-auto flex items-center flex-wrap justify-between">
         <div class="sm:mr-8">
@@ -6,19 +8,30 @@ transform: translate(-50%, 0);  box-shadow: 0 4px 5px rgb(0 0 0 / 10%);">
                 <img class="w-9 hover:translate-x-4" src="\assets\img\logo.svg">
             </a>
         </div>
-        <nav id="menu" class="order-last md:order-none items-center w-full md:w-auto md:flex hidden mt-2 md:mt-0 transition-all ease-in-out">
+        <nav id="menu"
+            class="order-last md:order-none items-center w-full md:w-auto md:flex hidden mt-2 md:mt-0 transition-all ease-in-out">
             {% for item in menu %}
-            <a href="{{ item.url | url }}" {% if item.newTab %}target="_blank" rel="noopener" {% endif %}id="menuLink" class="block mt-4 md:inline-block md:mt-0 text-gray-700 hover:opacity-30 transition-opacity mr-4">{{ item.label }}</a>
+            <a href="{{ item.url | url }}" {% if item.newTab %}target="_blank" rel="noopener" {% endif %}id="menuLink"
+                class="block mt-4 md:inline-block md:mt-0 text-gray-700 hover:opacity-30 transition-opacity mr-4">{{
+                item.label }}</a>
             {% endfor %}
-            <a class="ml-4 hover:opacity-60 transition-opacity" href="https://www.linkedin.com/in/hillelkhiat/" target="_blank"><img src="/assets/img/linkedin.svg" alt="logo linekdin" width="16rem" srcset="" style="margin-top:0.2rem"></a>
+            <div class="mt-4 sm:mt-0">
+                <a class="ml-0 sm:ml-4 hover:opacity-60 transition-opacity inline-block" href="https://www.linkedin.com/in/hillelkhiat/"
+                    target="_blank"><img src="/assets/img/linkedin.svg" alt="logo linekdin" width="16rem" srcset=""
+                        style="margin-top:0.2rem"></a>
 
-            <a class="ml-4 hover:opacity-60 transition-opacity" href="https://www.instagram.com/iamhillelk/" target="_blank"><img src="/assets/img/instagram.svg" alt="logo instagram" width="16rem" srcset="" style="margin-top:0.2rem"></a>
+                <a class="ml-4 hover:opacity-60 transition-opacity inline-block" href="https://www.instagram.com/iamhillelk/"
+                    target="_blank"><img src="/assets/img/instagram.svg" alt="logo instagram" width="16rem" srcset=""
+                        style="margin-top:0.2rem"></a>
+
+            </div>
         </nav>
-<!--        <form id="search" action="{{ '/search' | url }}" class="order-last sm:order-none flex-grow items-center justify-end hidden sm:block mt-6 sm:mt-0">
+        <!--        <form id="search" action="{{ '/search' | url }}" class="order-last sm:order-none flex-grow items-center justify-end hidden sm:block mt-6 sm:mt-0">
             <label class="visually-hidden" for="header-searchbox">Search here ...</label>
             <input type="text" id="header-searchbox" name="q" placeholder="Search here ..." class="w-full sm:max-w-xs bg-gray-200 border border-transparent float-right focus:bg-white focus:border-gray-300 focus:outline-none h-8 p-4 placeholder-gray-500 rounded text-gray-700 text-sm">
         </form> -->
-        <div id="menu-toggle" class="flex items-center md:hidden text-gray-700 hover:text-portfolio-vert cursor-pointer sm:ml-6">
+        <div id="menu-toggle"
+            class="flex items-center md:hidden text-gray-700 hover:text-portfolio-vert cursor-pointer sm:ml-6">
             <p style="margin-bottom: 0.2rem; margin-right:0.5rem;">Menu</p>
             {% include "icons/menu.svg" %}
         </div>
