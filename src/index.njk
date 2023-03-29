@@ -6,16 +6,18 @@ keywords: graphiste, portfolio, marseille, 3D, site vitrine
 ---
 
 <section id="hero">
-  <div class="flex ninetyVh items-center justify-center content-center">
+  <div class="flex mt-16 items-center justify-center content-center">
     <div
-      class="w-11/12 lg:w-full h-5/6 flex flex-col-reverse sm:flex-row items-center justify-evenly overflow-hidden"
+      class=" w-full flex flex-col"
     >
 
     <div id="lottieHero">
       <lottie-player src="/assets/img/traceHero.json" background="transparent" speed=".8"
         style="width: 100vw; height: 70vh" loop autoplay></lottie-player>
     </div>
-      <div class="w-fit sm:m-0 m-4">
+
+      <div class="sm:m-0 m-4 flex flex-col text-center items-center">
+        
         <p
           class="border border-portfolio-vert text-portfolio-vert rounded-full py-1 px-2 mb-4 text-xs w-fit"
         >
@@ -32,9 +34,18 @@ keywords: graphiste, portfolio, marseille, 3D, site vitrine
 
         <p class="text-portfolio-vert">
           <span class="text-3xl">Des designs accrocheurs </span> <br />
-          <span class="text-4xl font-bold">pour une présence en ligne</span>
-          <br />
-          <span class="text-4xl font-bold">remarquée</span>
+
+          <div class="hidden sm:block text-portfolio-vert">
+            <span class="text-4xl font-bold">pour une présence en ligne</span>
+            <br />
+            <span class="text-4xl font-bold">remarquée</span>
+          </div>
+
+          <div class="block sm:hidden text-portfolio-vert">
+            <span class="text-4xl font-bold">pour une présence en ligne remarquée</span>
+
+          </div>
+
         </p>
 
         <p class="max-w-sm font-light">
@@ -42,20 +53,13 @@ keywords: graphiste, portfolio, marseille, 3D, site vitrine
           public cible grâce à nos créations graphiques.
         </p>
 
+        <img src="/assets/img/SiteInternet3DHero.png" class="hidden sm:block max-w-4xl w-full" alt="" srcset="">
+        <img src="/assets/img/SiteInternet3DHeroMobile.png" class="block sm:hidden max-w-4xl w-full" alt="" srcset="">
 
-        <a
-          class="inline-block w-12 z-20 py-2 px-4 bg-portfolio-vertLg border-portfolio-vert border rounded-full mt-14 sm:mt-8"
-          href="#pres" > <img class="" src="/assets/img/arrowDown.svg" alt="" srcset=""></a
-        >
+
       </div>
 
-      <div id="heroVideo">
-        <video autoplay loop muted playsinline preload="auto" id="teteVideo">
-          <source src="/assets/img/MacBookPro.mov" type=video/quicktime;
-          codecs="hevc">
-          <source src="/assets/img/MacBookPro.webm" type="video/webm" />
-        </video>
-      </div>
+
     </div>
 
   </div>
