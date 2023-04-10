@@ -65,18 +65,16 @@ gsap.registerPlugin(ScrollTrigger);
 const sectionsAnim = gsap.utils.toArray('.triggerSection');
 sectionsAnim.forEach(triggerSection => {
   gsap.from(triggerSection, { 
-    y: 150, autoAlpha:0.1,
+    y: 100, autoAlpha:0.1,
     scrollTrigger: {
       trigger: triggerSection,
+      stagger:0.2,
       scrub: true,
-      start: "1px 100%",
-      end : "20% 85%"
+      start: "top 90%",
+      end : "+=200"
     }
   })
 });
-
-
-
 
 
 //Animation GSAP 

@@ -152,7 +152,7 @@ keywords: graphiste, portfolio, marseille, 3D, site vitrine
     </div>
 
     <div
-      class="triggerSection flex mx-auto max-w-6xl align-middle items-center justify-center relative"
+      class="triggerSection flex mx-auto align-middle items-center justify-center relative"
     >
       <img
         src="assets/img/yeux.svg"
@@ -160,58 +160,98 @@ keywords: graphiste, portfolio, marseille, 3D, site vitrine
         class="absolute right-0 top-6 overflow-hidden z-10 w-10 md:w-20"
       />
 
-      <div
-        class="main-gallery w-full my-3"
-        data-flickity='{"contain" : "true", "wrapAround": "true", "pageDots": "false", "selectedAttraction" : "0.01", "friction" : "0.15" }'
-      >
+<div
+  class="main-gallery mt-4"
+  data-flickity='{ "wrapAround": "true", "pageDots": "false", "selectedAttraction" : "0.01", "friction" : "0.15", "initialIndex": "2", "contain": "true" }'
+>
         <div class="gallery-cell">
           <div
-            class="flex w-full h-full bg-cover bg-center justify-center items-center bg-blend-multiply"
+            class="flex flex-col justify-end w-full h-full bg-cover bg-center pb-10 items-center bg-blend-multiply shadow-sm"
             style="
               background-image: url(/projets/img/airking/coverAirking.jpg);
-              background-color: rgb(0 0 0 / 19%);
+              background-color: rgb(0 0 0 / 31%);
               border-radius: 10px;
             "
           >
             <a href="/airking">
               <div class="text-white">
-                <p class="italic text-center mb-3 text-3xl">2022</p>
-                <h2 class="md:text-8xl text-5xl">Airking</h2>
+                <p class="italic text-center mb-3 md:text-3xl text-xl">2022</p>
+                <h2 class="md:text-6xl text-4xl">Airking</h2>
               </div>
             </a>
+            <a href="/airking" class=" text-white rounded-lg py-2 px-3 shadow-sm" style="background-color: #ffffff42;" >Découvrir le Projet</a>
+
+          </div>
           </div>
 
+          
+
+          <div class="gallery-cell">
           <div
-            class="flex w-full h-full bg-cover bg-center justify-center items-center bg-blend-multiply"
+            class="flex flex-col justify-end w-full h-full bg-cover bg-center pb-10 items-center bg-blend-multiply shadow-sm"
             style="
               background-image: url(projets/img/ophtaline/coverOphtaline.jpg);
-              background-color: rgb(0 0 0 / 19%);
+              background-color: rgb(0 0 0 / 31%);
               border-radius: 10px;
             "
           >
-            <a href="/ophtaline">
+            <a href="/projets/ophtaline/">
               <div class="text-white">
-                <p class="italic text-center mb-3 text-3xl">2019</p>
-                <h2 class="md:text-8xl text-5xl">Ophtaline</h2>
+                <p class="italic text-center mb-3 md:text-3xl text-xl">2019</p>
+                <h2 class="md:text-6xl text-5xl">Ophtaline</h2>
               </div>
             </a>
-          </div>
+            <a href="/projets/ophtaline/" class=" text-white rounded-lg py-2 px-3 shadow-sm" style="background-color: #ffffff42;" >Découvrir le Projet</a>
 
+          </div>
+        </div>
+
+        <div class="gallery-cell">
           <div
-            class="flex w-full h-full bg-cover bg-center justify-center items-center bg-blend-multiply"
+          class="flex flex-col justify-end w-full h-full bg-cover bg-center pb-10 items-center bg-blend-multiply shadow-sm"
+          style="
+            background-image: url(/assets/img/coverMaboxPharma.jpg);
+            background-color: rgb(0 0 0 / 31%);
+            border-radius: 10px;
+          "
+        >
+          <a href="/ma-box-pharma">
+            <div class="text-white">
+              <p class="italic text-center mb-3 md:text-3xl text-xl">2022</p>
+              <h2 class="md:text-6xl text-4xl">Ma Box Pharma</h2>
+            </div>
+          </a>
+          <a href="/ma-box-pharma" class=" text-white rounded-lg py-2 px-3 shadow-sm" style="background-color: #ffffff42;" >Découvrir le Projet</a>
+
+
+        </div>
+      </div>
+
+        <div class="gallery-cell">
+          <div
+            class="flex flex-col justify-end w-full h-full bg-cover bg-center pb-10 items-center bg-blend-multiply shadow-sm"
             style="
               background-image: url(projets/img/tourCampanet/coverTourCampanet.jpg);
-              background-color: rgb(0 0 0 / 19%);
+              background-color: rgb(0 0 0 / 31%);
               border-radius: 10px;
             "
           >
             <a href="/tour-campanet">
               <div class="text-white">
-                <p class="italic text-center mb-3 text-3xl">2021</p>
-                <h2 class="md:text-8xl text-4xl">Tour Campanet</h2>
+                <p class="italic text-center mb-3 md:text-3xl text-xl">2021</p>
+                <h2 class="md:text-6xl text-4xl font-bold">Tour Campanet</h2>
               </div>
             </a>
+            <a href="/tour-campanet" class=" text-white rounded-lg py-2 px-3 shadow-sm" style="background-color: #ffffff42;" >Découvrir le Projet</a>
+
+
           </div>
+        </div>
+
+
+
+
+
         </div>
       </div>
     </div>
@@ -224,7 +264,7 @@ keywords: graphiste, portfolio, marseille, 3D, site vitrine
   <div class="w-0-auto my-12 flex justify-center triggerSection">
     <div class="text-center">
       <p class=" text-gray-600 text-xs mb-2">De la création de catalogue à celle de visuel 3D</p>
-      <h2>Découvrez les projets par catégorie</h2>
+      <h2 class="text-portfolio-vert">Découvrez les projets par catégorie</h2>
     </div>
 
   </div>
@@ -292,6 +332,10 @@ keywords: graphiste, portfolio, marseille, 3D, site vitrine
 
 <section id="avis max-w-xl">
   <div class="w-4/5 sm:max-w-3xl mx-auto triggerSection">
+    <div class="text-center">
+      <p class=" text-gray-600 text-xs mb-2">Un accompagnement complet</p>
+      <h2 class="text-portfolio-vert">Retours de clients satisfaits</h2>
+    </div>
     <div class="avisWrapper max-w-xl text-center relative">
       <img
         src="/assets/img/siteArchitecte.jpg"
@@ -541,7 +585,7 @@ keywords: graphiste, portfolio, marseille, 3D, site vitrine
   </div>
 </section>
 
-<script src="https://cdnjs.cloudflare.com/ajax/libs/flickity/2.3.0/flickity.pkgd.min.js"></script>
+<script src="https://unpkg.com/flickity@2/dist/flickity.pkgd.min.js"></script>
 <script src="https://unpkg.com/@lottiefiles/lottie-player@latest/dist/lottie-player.js"></script>
 
 

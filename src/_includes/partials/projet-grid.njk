@@ -3,7 +3,7 @@
 
 <div class="w-11/12 sm:w-1/2 md:w-1/2 mx-auto self-stretch p-2 mb-2 projetCell">
 
-    <div class="h-full">
+    <div class="h-full triggerSection">
         <a href="{{ projet.url | url }}">
             <img class="w-full m-0 lazy rounded-t-lg shadow-sm " src="{{ lazyImage }}" data-src="{% if projet.data.thumb %}{{ projet.data.thumb | url }}{% else %}{{ '/assets/img/no-image.svg' | url }}{% endif %}" width="auto" height="auto" alt="This projet thumbnail">
         </a>

@@ -1,24 +1,58 @@
-<footer class="mt-20 px-10 py-8 border-t-2 border-portfolio-vert w-5/6 m-0-auto text-sm ">
-    <div class="max-w-5xl mx-auto font-light flex flex-col sm:flex-row justify-between items-center ">
-        <div>
-            <a class="flex items-center" href="{{ '/' | url }}">
-                <img class="w-9 hover:translate-x-4 mb-6 sm:mb-0" src="\assets\img\logo.svg">
-            </a>
-           
-        </div> 
+<footer class="mt-20 px-4 py-8 border-t-2 border-portfolio-vert w-10/12 m-0-auto text-sm ">
+    <div class="max-w-6xl mx-auto font-light flex flex-col sm:flex-row justify-between items-start ">
 
-        <div class="flex items-center flex-col sm:flex-row gap-3">
-                <a class="ml-0 text-gray-700 font-medium sm:ml-4 hover:opacity-60 transition-opacity" href="/a-propos">À Propos</a>
-                <a class="ml-0 text-gray-700 font-medium sm:ml-4 hover:opacity-60 transition-opacity" href="/projets">Projets</a>
-                <a class="ml-0 text-gray-700 font-medium sm:ml-4 hover:opacity-60 transition-opacity" href="/blog">Blog</a>
-                <a class="ml-0 text-gray-700 font-medium sm:ml-4 hover:opacity-60 transition-opacity" href="/mentions-legales">Mentions Légales</a>
-                
-                <div class="flex flex-row mb-12 sm:mb-0">
-                    <p class="ml-0 sm:ml-4 mr-6">© 2023 <a href="/"> Hillel K.</a></p>
-                    <a class="ml-0 sm:ml-4" href="https://www.instagram.com/iamhillelk/" target="_blank"><img src="/assets/img/instagram.svg" alt="logo instagram" width="20rem" srcset=""></a>
+
+        <div class="flex flex-col sm:flex-row mb-6 gap-2 sm:gap-5">
+            <a href="{{ '/' | url }}">
+                <img class="w-9 hover:translate-x-4 mb-6 sm:mb-0 mt-1" src="\assets\img\logo.svg">
+            </a>
+
+            <div>
+                <p class="text-sm font-semibold mb-2 max-w-xs"> Des solutions web sur-mesure, 
+                    créatives et adaptées à vos besoins. Ensemble, construisons votre réussite en ligne !</p>
+                <div class="flex gap-1 mb-1">
+                    <img src="/assets/img/pin.svg" alt="" width="14rem">
+                    <p>47 Rue grignan, 13006 Marseille</p>
                 </div>
+
+                <div class="flex gap-1">
+                    <img src="/assets/img/phoneCalling.svg" width="14rem" alt="" srcset="">
+                    <p>06 95 25 54 26</p>
+
+                </div>
+            </div>
 
 
         </div>
+
+        <div class="flex flex-col sm:flex-row gap-3">
+            <div class="flex flex-col gap-1">
+                <p class="text-sm font-semibold mb-1">Navigation</p>
+                <a class="ml-0 text-gray-700 text-sm sm:ml-2 hover:opacity-60 transition-opacity" href="/a-propos">À
+                    Propos</a>
+                <a class="ml-0 text-gray-700 text-sm sm:ml-2 hover:opacity-60 transition-opacity"
+                    href="/projets">Projets</a>
+                <a class="ml-0 text-gray-700 text-sm sm:ml-2 hover:opacity-60 transition-opacity" href="/blog">Blog</a>
+                <a class="ml-0 text-gray-700 text-sm sm:ml-2 hover:opacity-60 transition-opacity"
+                    href="/mentions-legales">Mentions Légales</a>
+
+            </div>
+
+            <div class="flex flex-col gap-2">
+                <p class="text-sm font-semibold">Réseaux Sociaux</p>
+                <div class="flex flex-col">
+                    <a class="mb-2" href="https://www.instagram.com/iamhillelk/" target="_blank"><img
+                            src="/assets/img/instagram.svg" alt="logo instagram" width="20rem" srcset=""></a>
+                    <a class="mb-4" href="https://www.linkedin.com/in/hillelkhiat/" target="_blank"><img
+                            src="/assets/img/linkedin.svg" alt="logo instagram" width="20rem" srcset=""></a>
+                </div>
+
+            </div class="flex flex-col">
+
+        </div>
     </div>
+
+
+        <p class="text-center sm:text-right mt-5 font-normal text-gray-500 text-xs sm:ml-4 mr-6 ">© 2023 <a href="/"> Hillel K.</a></p>
+ 
 </footer>
